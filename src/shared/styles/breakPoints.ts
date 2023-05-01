@@ -4,7 +4,7 @@ const size = {
     md: '900px', // tela tablet
     lg: '1280px', // laptops
     xl: '1440px', // computadores/monitores
-    xxl: '1920px', // talas muto grandes
+    xxl: '1920px', // telas muto grandes
 }
 
 export const device = {
