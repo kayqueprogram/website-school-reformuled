@@ -2,12 +2,11 @@ const pageTheme = {
     colors: {
         details: {
             primary: {
-                dark: '#1a2844',
-                light: '#071A94',
+                dark: '#010521',
                 littleOpacity: '#1a2844cc'
             },
             secondary: {
-                dark: '#f60',
+                dark: '#F29325'
             }
         },
         text: {

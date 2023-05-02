@@ -8,12 +8,12 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    html {
-        font-size: 62.5%;
-    }
+   html{
+    font-size: 62.5%;
+   }
 
     body {
-        font-size: 1.6rem;
+       font-size: 1.6rem;
     }
 
     a {
@@ -21,15 +21,13 @@ const GlobalStyle = createGlobalStyle`
         color: currentColor;
     }
 
-    @media ${device.md} {
-        html {
-            font-size: 40%;
+    html{
+        @media ${device.md} {
+            font-size:50%;
         }
-    }
 
-    @media ${device.xs} {
-        html {
-            font-size: 38%;
+        @media ${device.sm} {
+            font-size: 36%;
         }
     }
 `;
