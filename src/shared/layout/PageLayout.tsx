@@ -21,7 +21,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
- height: 200vh;
+ flex: 1;
 `;
 
 export default PageLayout

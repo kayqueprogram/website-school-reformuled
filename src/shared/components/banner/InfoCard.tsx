@@ -6,6 +6,7 @@ import Column from '../column/Column';
 import Span from '../span/Span';
 import pageIcons from 'shared/utils/pageIcons';
 import pageTheme from 'shared/styles/pageTheme';
+import { Link } from 'react-router-dom';
 
 type Props = {
   title:string,
@@ -23,10 +24,12 @@ const InfoCard = ({title,src,Icon}:Props) => {
             BEST INDUSTRY LEADERS
           </Span>
           <Span textTransform='uppercase' fontWeight='bold' color={pageTheme.colors.details.secondary.dark}>
-            <Row>
-                <div >VIEW MORe</div>
+            <Link to={src}>
+              <Row>
+                <span>VIEW MORE</span>
                 <pageIcons.ArrowRight/>
-            </Row>
+              </Row>
+            </Link>
           </Span>
         </Column>
       </Row>

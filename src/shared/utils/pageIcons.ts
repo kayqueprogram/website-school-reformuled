@@ -1,5 +1,5 @@
 import {FiSearch,FiMenu} from 'react-icons/fi'
-import {MdOutlineArrowForwardIos} from 'react-icons/md';
+import {MdOutlineKeyboardArrowRight,MdOutlineKeyboardArrowLeft} from 'react-icons/md';
 import {GiSpellBook,GiStarsStack} from 'react-icons/gi';
 import {IoIosSchool,IoMdClose} from 'react-icons/io';
 import {SiMinds} from 'react-icons/si';
@@ -8,7 +8,8 @@ import {TfiEmail} from 'react-icons/tfi'
 
 const pageIcons = {
   Search: FiSearch,
-  ArrowRight:MdOutlineArrowForwardIos,
+  ArrowRight:MdOutlineKeyboardArrowRight,
+  ArrowLeft:MdOutlineKeyboardArrowLeft,
   Star:GiStarsStack,
   SchoolHat:IoIosSchool,
   Menu:FiMenu,

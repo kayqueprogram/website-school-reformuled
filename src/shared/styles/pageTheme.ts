@@ -6,7 +6,7 @@ const pageTheme = {
                 littleOpacity: '#1a2844cc'
             },
             secondary: {
-                dark: '#F29325'
+                dark: '#F6BA07'
             }
         },
         text: {
