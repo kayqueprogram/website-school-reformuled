@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Folder from '../shared/components/GalleryFolder'
+import Folder from '../../shared/components/GalleryFolder'
 
 const GalleryPageWrapper = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ const GalleryPageWrapper = styled.div`
 `;
 
 
-const Gallery: React.FC = () => {
+const Galeria: React.FC = () => {
   return (
     <GalleryPageWrapper>
         <Folder title='Projeto dia D' />
@@ -22,4 +22,4 @@ const Gallery: React.FC = () => {
   );
 };
 
-export default Gallery;
+export default Galeria;
