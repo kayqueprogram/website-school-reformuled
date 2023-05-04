@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useEffect, useRef} from 'react';
 import {SwiperSlide} from 'swiper/react';
 import styled from 'styled-components';
 import Slide from '../slide/Slide';
@@ -34,6 +34,10 @@ const CardsSlide = ({CardComponent}:TProps) => {
     prevEl: navigationPrevRef.current!, 
     nextEl: navigationNextRef.current!, 
   }}
+
+  useEffect(()=>{
+    
+  })
  
   return (
     <>

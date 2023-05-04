@@ -6,7 +6,7 @@ import MenuMobile from "./MobileMenu";
 
 const Field = () => {
   const [isMobile, setIsMobile] = useState(false);
-
+  
   useEffect(() => {
     const handleResize = () => {
       const number = extractNumberFromString(device.md);
@@ -15,8 +15,9 @@ const Field = () => {
       }
     };
 
+    handleResize()
     window.addEventListener("resize", handleResize);
-
+    
     return () => {
       window.removeEventListener("resize", handleResize);
     };
