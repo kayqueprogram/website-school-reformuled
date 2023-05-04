@@ -1,4 +1,4 @@
-import React,{useEffect, useRef} from 'react';
+import React,{useEffect, useRef, useState} from 'react';
 import {SwiperSlide} from 'swiper/react';
 import styled from 'styled-components';
 import Slide from '../slide/Slide';
@@ -28,6 +28,7 @@ const slideConfig = {
 }
 
 const CardsSlide = ({CardComponent}:TProps) => {
+  const [refIsNotNull,setRefIsNotNull] = useState(false);
   const navigationPrevRef = useRef<HTMLButtonElement>(null)
   const navigationNextRef = useRef<HTMLButtonElement>(null)
   const nav = {navigation:{
@@ -36,8 +37,11 @@ const CardsSlide = ({CardComponent}:TProps) => {
   }}
 
   useEffect(()=>{
-    
-  })
+    if(navigationNextRef.current || navigationPrevRef.current){
+      setRefIsNotNull(true)
+    }
+
+  },[navigationNextRef.current,navigationPrevRef.current])
  
   return (
     <>

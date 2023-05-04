@@ -58,7 +58,7 @@ const Container = styled.div`
   color: ${({theme})=>theme.colors.text.secondary.light};
 
   @media ${device.md} {
-    min-height: 380px;
+    min-height: 360px;
   }
 `;
 
