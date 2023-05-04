@@ -15,13 +15,12 @@ const GalleryPageWrapper = styled.div`
 
 const Galeria: React.FC = () => {
   return (
-    <PageLayout>
       <GalleryPageWrapper>
         <Folder title='Projeto dia D' />
        
         <Folder title='Projeto dia D' />
     </GalleryPageWrapper>
-    </PageLayout>
+
   );
 };
 
