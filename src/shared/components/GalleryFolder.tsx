@@ -6,7 +6,7 @@ interface FolderProps {
 }
 
 const FolderWrapper = styled.div`
-  margin: 9px;
+  margin: auto;
   width: 200px;
   height: 150px;
   background-color: #f5f5f5;

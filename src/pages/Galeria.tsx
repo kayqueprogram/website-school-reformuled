@@ -8,7 +8,7 @@ const GalleryPageWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   padding: 20px;
 `;
 
