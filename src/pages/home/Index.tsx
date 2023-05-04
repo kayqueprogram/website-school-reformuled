@@ -4,7 +4,9 @@ import SectionContainer from 'shared/components/Section_Container/SectionContain
 import Banner from 'shared/components/banner/Banner';
 import CardsSlide from 'shared/components/cards_slide/CardsSlide';
 import pageTheme from 'shared/styles/pageTheme';
-import { Link } from 'react-router-dom';
+import DataFetcher from 'shared/components/data_fetcher/DataFetcher';
+import getBlogPosts from 'services/blog/getBlogPosts';
+
 
 const Index = () => {
   return (
@@ -13,17 +15,17 @@ const Index = () => {
         <SectionContainer
           title='Confira os Últimos Eventos'
         >
-        <CardsSlide
-         CardComponent={BlogCard}
-        />
+ 
        </SectionContainer>
        <SectionContainer
          title='Leia Nossos Posts'
          backgroundColor={pageTheme.colors.details.primary.dark}
          color={pageTheme.colors.text.secondary.light}
         >
-          <CardsSlide
-           CardComponent={BlogCard}
+          <DataFetcher
+           fetchFunc={getBlogPosts}
+           Component={CardsSlide}
+           propsForComponent={{CardComponent:BlogCard}}
           />
         </SectionContainer>
         <SectionContainer

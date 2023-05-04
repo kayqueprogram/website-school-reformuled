@@ -57,7 +57,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 94rem;
+  min-height: 80rem;
   background-color: #00000061;
   color: ${({theme})=>theme.colors.text.secondary.light};
 

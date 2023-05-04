@@ -32,9 +32,14 @@ const Container = styled.div`
   .swiper{
     padding:6rem 0px;
   }
+  
+  .swiper-wrapper{
+    align-items: stretch !important;
+  }
+
  .swiper-slide {
   width: 100%;
-  height: 100%;
+  height: auto;
  }
 `;
 

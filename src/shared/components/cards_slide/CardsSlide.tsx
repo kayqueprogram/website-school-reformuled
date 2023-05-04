@@ -5,8 +5,10 @@ import Slide from '../slide/Slide';
 import Row from '../row/Row';
 import pageIcons from 'shared/utils/pageIcons';
 
+
 type TProps = {
-    CardComponent:React.FC<any>
+    CardComponent:React.FC<any>,
+    data:Array<any>
 }
 
 const slideConfig = {
@@ -27,7 +29,7 @@ const slideConfig = {
   }
 }
 
-const CardsSlide = ({CardComponent}:TProps) => {
+const CardsSlide = ({CardComponent,data}:TProps) => {
   const [refIsNotNull,setRefIsNotNull] = useState(false);
   const navigationPrevRef = useRef<HTMLButtonElement>(null)
   const navigationNextRef = useRef<HTMLButtonElement>(null)
@@ -35,6 +37,8 @@ const CardsSlide = ({CardComponent}:TProps) => {
     prevEl: navigationPrevRef.current!, 
     nextEl: navigationNextRef.current!, 
   }}
+
+  console.log(data)
 
   useEffect(()=>{
     if(navigationNextRef.current || navigationPrevRef.current){
@@ -46,7 +50,7 @@ const CardsSlide = ({CardComponent}:TProps) => {
   return (
     <>
      {
-        CardComponent && (
+        (data) && (
          <Container>
           <Row justifyContent='flex-end'>
             <Row gap='1rem'>
@@ -62,9 +66,9 @@ const CardsSlide = ({CardComponent}:TProps) => {
               slideConfig={{...nav,...slideConfig}}
             >
               {
-                Array(6).fill(0).map((_,index)=>(
-                   <SwiperSlide key={index}>
-                     <CardComponent title='TESTE'/>
+                data.map((el)=>(
+                   <SwiperSlide key={el?.id}>
+                     <CardComponent {...el}/>
                    </SwiperSlide>
                  )
                  )

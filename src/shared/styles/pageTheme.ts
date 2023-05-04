@@ -22,7 +22,7 @@ const pageTheme = {
     },
     measures : {
         border_radius: '4px',
-        max_wide_wrapping_width: '1280px'
+        max_wide_wrapping_width: '1340px'
     },
 };
 
