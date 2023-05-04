@@ -10,6 +10,7 @@ const GalleryPageWrapper = styled.div`
   align-items: center;
   height: 100vh;
   padding: 20px;
+  backgound-color: #062f67;
 `;
 
 
