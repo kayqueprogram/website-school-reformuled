@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
         }
 
         @media ${device.sm} {
-            font-size: 36%;
+            font-size: 38%;
         }
     }
 `;

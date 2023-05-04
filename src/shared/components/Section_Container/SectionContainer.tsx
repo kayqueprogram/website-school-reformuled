@@ -6,6 +6,7 @@ import Span from '../span/Span';
 import Column from '../column/Column';
 
 
+
 type Props = {
   children: React.ReactNode;
   title?:string;
@@ -43,9 +44,10 @@ const SectionContainer = ({children,title,subTitle,isRelative,color,backgroundCo
 const Container = styled.section<{backgroundColor?:string,isRelative?:boolean,color?:string}>`
  width: 100%;
  position: ${({isRelative})=>isRelative?'relative':'static'};
- padding: 9rem 0px;
+ padding: 8rem 0rem;
  color:${({color})=>color || 'currentColor'};
  background-color: ${({backgroundColor})=>backgroundColor || 'transparent'};
+
 `;
 
 const Header = styled.div`

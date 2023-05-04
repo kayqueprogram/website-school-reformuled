@@ -12,7 +12,7 @@ type TProps = {
 }
 
 const slideConfig = {
-  spaceBetween:30,
+  spaceBetween:20,
   breakpoints: {
     1024:{
       slidesPerView:4

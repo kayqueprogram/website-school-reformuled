@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import cutString from "shared/utils/cutString";
 import Span from "../span/Span";
-import Column from "../column/Column";
+
 
 type TCardProps = {
   title: string;
@@ -25,7 +25,6 @@ const BlogCard = ({ title, image, content }: TCardProps) => {
 
 const CardContainer = styled.div`
   height: 100%;
-  padding: 4px;
   border-radius: 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -34,11 +33,12 @@ const CardContainer = styled.div`
   transition: 0.3s;
   
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
   
   &>*:not(:first-child){
     margin-top: 10px;
+   
   }
 `;
 
