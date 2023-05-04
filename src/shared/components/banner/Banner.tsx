@@ -8,6 +8,7 @@ import CardGrid from '../card_grid/CardGrid';
 import { device } from 'shared/styles/breakPoints';
 import RemoveComponentSmallerScreen from '../remove_component_smaller_screen/RemoveComponentSmallerScreen';
 import pageIcons from 'shared/utils/pageIcons';
+import StylizedButton from '../stylized_button/StylizedButton';
 
 const Banner = () => {
   return (
@@ -19,6 +20,9 @@ const Banner = () => {
              THE BEST THEME FOR
            </Span>
            <Span fontSize='10rem' fontWeight='bold'>Education</Span>
+           <StylizedButton path='/sobre'>
+             Saiba Mais
+           </StylizedButton>
          </Column>
          <RemoveComponentSmallerScreen>
           <InfoField>
