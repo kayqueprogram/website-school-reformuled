@@ -1,6 +1,6 @@
 import PageLayout from 'shared/layout/PageLayout';
 import Home from 'pages/home/Index';
-import Galeria from 'pages/home/Galeria';
+import Galeria from 'pages/Galeria';
 
 const routesConfig = [
   {
