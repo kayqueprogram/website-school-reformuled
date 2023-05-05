@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Videos from 'shared/components/galeria/video/Video';
+import Row from 'shared/components/row/Row';
 
 const GalleryWrapper = styled.div`
   display: flex;
@@ -10,6 +11,7 @@ const GalleryWrapper = styled.div`
   margin: auto;
   border-radius: 23px;
   background-color: ${({theme})=> theme.colors.details.primary.dark};
+  color: ${({ theme }) => theme.colors.text.secondary.light};
   padding: 20px;
   padding-top: 100px;
 `;
@@ -37,7 +39,7 @@ const DiaD = () => {
               <img src={image} alt={`Image ${index}`} />
             </ImageWrapper>
           ))}
-          Vídeos
+          <Row>Vídeos</Row>
           <Videos />
         </GalleryWrapper>
     </div>

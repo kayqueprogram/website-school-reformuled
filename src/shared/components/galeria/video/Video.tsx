@@ -22,6 +22,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: ${({ theme }) => theme.colors.text.secondary.light};
 `;
 
 const Video = styled.div`
