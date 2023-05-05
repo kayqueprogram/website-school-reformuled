@@ -5,7 +5,7 @@ const GalleryWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 25px auto;
   height: 100vh;
   background-color: #00000061;
   padding: 20px;
