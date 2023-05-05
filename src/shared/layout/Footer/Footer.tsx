@@ -13,7 +13,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 2rem;
+  padding: 16px;
   background-color: ${({ theme }) => theme.colors.details.primary.dark};
   color: ${({ theme }) => theme.colors.text.secondary.light};
 `;
