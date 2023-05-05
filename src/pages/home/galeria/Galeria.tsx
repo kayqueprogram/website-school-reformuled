@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Folder from '../../../shared/components/galeria/GalleryFolder';
 import DiaD from './DiaD';
 import StyledNavLink from 'shared/components/styled_nav_link/StyledNavLink';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const GalleryPageWrapper = styled.div`
@@ -21,9 +21,11 @@ const Galeria: React.FC = () => {
   return (
       <GalleryPageWrapper>
      <StyledNavLink path='/contato' label='Contato'/>
-       <a href="#">
-          <Folder title='Projeto dia D' />
-       </a>
+      
+          <Link to='/galeria/prjD'>
+            <Folder title='Projeto dia D' />
+          </Link>
+      
 
     </GalleryPageWrapper>
 
