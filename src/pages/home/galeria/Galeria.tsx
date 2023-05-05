@@ -13,7 +13,7 @@ const GalleryPageWrapper = styled.div`
   align-items: center;
   height: 100vh;
   padding: 20px;
-  background-color: #00000061;
+  background-color: ${({theme})=> theme.colors.details.primary.dark};
 `;
 
 

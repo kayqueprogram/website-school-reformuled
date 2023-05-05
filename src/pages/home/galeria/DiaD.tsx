@@ -7,7 +7,7 @@ const GalleryWrapper = styled.div`
   max-width: 1200px;
   margin: 25px auto;
   height: 100vh;
-  background-color: #00000061;
+  background-color: ${({theme})=> theme.colors.details.primary.dark};
   padding: 20px;
 `;
 

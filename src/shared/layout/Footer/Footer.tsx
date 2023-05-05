@@ -10,12 +10,12 @@ const Footer = () => {
 }
 
 const Container = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0px 2rem;
-  background-color: ${({theme})=>theme.colors.details.primary.dark};
-  color: ${({theme})=>theme.colors.text.secondary.light};
+  background-color: ${({ theme }) => theme.colors.details.primary.dark};
+  color: ${({ theme }) => theme.colors.text.secondary.light};
 `;
 
 export default Footer
