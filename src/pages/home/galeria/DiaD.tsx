@@ -6,6 +6,8 @@ const GalleryWrapper = styled.div`
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  height: 100vh;
+  background-color: #00000061;
   padding: 20px;
 `;
 
