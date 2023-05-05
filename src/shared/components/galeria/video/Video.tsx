@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Videos = () => {
-  const videos = [    {      id: 1,      title: "Entrevista 1",      src: "https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/entrevista1.mp4?alt=media&token=647dee36-4248-42cb-bab8-dbbac67aa237",    }, ] 
+  const videos = [    {      id: 1,      title: 'Entrevista 1',      src: 'https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/entrevista1.mp4?alt=media&token=647dee36-4248-42cb-bab8-dbbac67aa237',    }, {     id: 2,    title: 'Entrevista 2',  src: 'https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/entrevista2.mp4?alt=media&token=18597d3c-6dc6-4a42-974f-e322f0812438'   },   {   id: 3,   title: 'Entrevista 3',   src: 'https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/entrevista3.mp4?alt=media&token=7165f51a-160e-40c6-aebd-06c4d269cd43'     }    ] 
 
   return (
     <Container>
