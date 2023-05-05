@@ -1,6 +1,7 @@
 import PageLayout from 'shared/layout/PageLayout';
 import Home from 'pages/home/Index';
-import Galeria from 'pages/Galeria';
+import Galeria from 'pages/home/galeria/Galeria';
+import DiaD from 'pages/home/galeria/DiaD'
 
 const routesConfig = [
   {
@@ -12,6 +13,11 @@ const routesConfig = [
     path: '/galeria',
     label: 'Galeria',
     Component:<PageLayout><Galeria/></PageLayout>
+  },
+  {
+    path: '/galeria/prjD',
+    label:'Projeto dia D',
+    Component:<PageLayout><DiaD/></PageLayout>
   },
 ];
 

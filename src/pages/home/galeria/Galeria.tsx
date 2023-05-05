@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Folder from '../shared/components/GalleryFolder'
-import PageLayout from 'shared/layout/PageLayout';
+import Folder from '../../../shared/components/galeria/GalleryFolder';
+import DiaD from './DiaD';
+import StyledNavLink from 'shared/components/styled_nav_link/StyledNavLink';
+import { NavLink } from 'react-router-dom';
+
 
 const GalleryPageWrapper = styled.div`
   display: flex;
@@ -17,9 +20,11 @@ const GalleryPageWrapper = styled.div`
 const Galeria: React.FC = () => {
   return (
       <GalleryPageWrapper>
-        <Folder title='Projeto dia D' />
-       
-        <Folder title='Projeto dia D' />
+     <StyledNavLink path='/contato' label='Contato'/>
+       <a href="#">
+          <Folder title='Projeto dia D' />
+       </a>
+
     </GalleryPageWrapper>
 
   );
