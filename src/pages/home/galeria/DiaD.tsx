@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Videos from 'shared/components/galeria/video/Video';
 
 const GalleryWrapper = styled.div`
   display: flex;
@@ -36,6 +37,8 @@ const DiaD = () => {
               <img src={image} alt={`Image ${index}`} />
             </ImageWrapper>
           ))}
+          Vídeos
+          <Videos />
         </GalleryWrapper>
     </div>
   );
