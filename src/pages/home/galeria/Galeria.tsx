@@ -20,14 +20,10 @@ const GalleryPageWrapper = styled.div`
 const Galeria: React.FC = () => {
   return (
       <GalleryPageWrapper>
-     <StyledNavLink path='/contato' label='Contato'/>
-      
-          <Link to='/galeria/prjD'>
+        <Link to='/galeria/prjD'>
             <Folder title='Projeto dia D' />
           </Link>
-      
-
-    </GalleryPageWrapper>
+       </GalleryPageWrapper>
 
   );
 };
