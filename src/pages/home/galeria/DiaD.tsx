@@ -10,7 +10,7 @@ const GalleryWrapper = styled.div`
   border-radius: 23px;
   background-color: ${({theme})=> theme.colors.details.primary.dark};
   padding: 20px;
-  padding-top: 95px;
+  padding-top: 100px;
 `;
 
 const ImageWrapper = styled.div`
