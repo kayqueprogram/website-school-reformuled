@@ -33,6 +33,7 @@ const Video = styled.div`
   max-width: 400px;
   width: 100%;
   video {
+    border-radius: 20px;
     width: 100%;
     max-width: 100%;
   }
