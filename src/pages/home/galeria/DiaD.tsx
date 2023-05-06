@@ -39,9 +39,9 @@ const DiaD = () => {
               <img src={image} alt={`Image ${index}`} />
             </ImageWrapper>
           ))}
-        </GalleryWrapper>
-        <Row>Vídeos</Row>
+          <Row>Vídeos</Row>
           <Videos />
+        </GalleryWrapper>
     </div>
   );
 };

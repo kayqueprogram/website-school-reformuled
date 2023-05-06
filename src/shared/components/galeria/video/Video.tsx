@@ -30,9 +30,14 @@ const Video = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
   max-width: 400px;
+  width: 100%;
+  video {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
+
 
 const Title = styled.h2`
   margin-top: 1rem;
