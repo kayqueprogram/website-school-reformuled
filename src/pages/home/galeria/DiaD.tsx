@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Videos from 'shared/components/galeria/video/Video';
 import Row from 'shared/components/row/Row';
+import WideWrapping from 'shared/components/wide_wrapping/WideWrapping';
 
 const GalleryWrapper = styled.div`
   display: flex;
@@ -35,9 +36,11 @@ const DiaD = () => {
     <div>
         <GalleryWrapper>
           {images.map((image, index) => (
-            <ImageWrapper key={index}>
-              <img src={image} alt={`Image ${index}`} />
-            </ImageWrapper>
+            <WideWrapping>
+              <ImageWrapper key={index}>
+                <img src={image} alt={`Image ${index}`} />
+              </ImageWrapper>
+            </WideWrapping>
           ))}
           <Row>Vídeos</Row>
           <Videos />
