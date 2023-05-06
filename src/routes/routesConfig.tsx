@@ -1,7 +1,7 @@
 import PageLayout from 'shared/layout/PageLayout';
 import Home from 'pages/home/Index';
-import Galeria from 'pages/home/galeria/Galeria';
-import DiaD from 'pages/home/galeria/DiaD'
+import Galeria from 'pages/galeria/Galeria';
+import DiaD from 'pages/galeria/DiaD'
 
 const routesConfig = [
   {

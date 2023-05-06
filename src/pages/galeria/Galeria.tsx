@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Folder from '../../../shared/components/galeria/GalleryFolder';
+import Folder from '../../shared/components/galeria/GalleryFolder';
 import DiaD from './DiaD';
 import StyledNavLink from 'shared/components/styled_nav_link/StyledNavLink';
 import { Link } from 'react-router-dom';

@@ -33,19 +33,18 @@ const DiaD = () => {
 
 
   return (
-    <div>
+    <WideWrapping>
         <GalleryWrapper>
           {images.map((image, index) => (
-            <WideWrapping>
               <ImageWrapper key={index}>
                 <img src={image} alt={`Image ${index}`} />
               </ImageWrapper>
-            </WideWrapping>
+          
           ))}
           <Row>Vídeos</Row>
           <Videos />
         </GalleryWrapper>
-    </div>
+    </WideWrapping>
   );
 };
 
