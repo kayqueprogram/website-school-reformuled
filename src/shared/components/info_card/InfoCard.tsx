@@ -1,17 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
-import {IconType} from 'react-icons'
+import { Link } from 'react-router-dom';
 import Row from '../row/Row';
 import Column from '../column/Column';
 import Span from '../span/Span';
-import pageIcons from 'shared/utils/pageIcons';
 import pageTheme from 'shared/styles/pageTheme';
-import { Link } from 'react-router-dom';
+import pageIcons from 'shared/utils/pageIcons';
+import { IconType } from 'react-icons';
+import styled from 'styled-components';
 
 type Props = {
-  title:string,
-  src:string,
-  Icon:IconType
+    title:string;
+    src:string;
+    Icon:IconType;
 }
 
 const InfoCard = ({title,src,Icon}:Props) => {

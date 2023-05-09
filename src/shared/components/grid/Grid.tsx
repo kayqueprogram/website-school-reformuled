@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardGrid = ({children}:{children:React.ReactNode}) => {
+type TProps = {
+  children:React.ReactNode
+}
+
+const Grid = ({children}:TProps) => {
   return (
     <Container>
       {children}
@@ -16,4 +20,4 @@ const Container = styled.div`
  grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
 `;
 
-export default CardGrid
+export default Grid

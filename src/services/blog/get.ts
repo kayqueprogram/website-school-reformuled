@@ -1,4 +1,4 @@
-import { collection,getDocs } from 'firebase/firestore';
+import { collection,doc,getDocs,getDoc} from 'firebase/firestore';
 import { db } from 'services/firebase-config';
 
 //arrumar para mais security :) 
@@ -11,4 +11,13 @@ async function getBlogPosts (){
     return data;
 }
 
-export default getBlogPosts;
+async function getBlogPost(id:string) {
+   const postRef = doc(db,'posts',id);
+   const postDoc = await getDoc(postRef);
+   return postDoc.data()
+
+}
+
+
+
+export default {getBlogPosts,getBlogPost};

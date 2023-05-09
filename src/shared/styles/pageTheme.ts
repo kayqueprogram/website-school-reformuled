@@ -6,7 +6,8 @@ const pageTheme = {
                 littleOpacity: '#1a2844cc'
             },
             secondary: {
-                dark: '#F6BA07'
+                dark: '#F6BA07',
+                light:'rgb(231 173 0 / 36%)'
             }
         },
         text: {
@@ -22,7 +23,7 @@ const pageTheme = {
     },
     measures : {
         border_radius: '4px',
-        max_wide_wrapping_width: '1340px'
+        max_wide_wrapping_width: '1400px'
     },
 };
 

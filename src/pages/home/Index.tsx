@@ -1,23 +1,32 @@
 import React from 'react';
 import BlogCard from 'shared/components/blog_card/BlogCard';
+import EventCard from 'shared/components/event_card/EventCard';
 import SectionContainer from 'shared/components/Section_Container/SectionContainer';
 import Banner from 'shared/components/banner/Banner';
 import CardsSlide from 'shared/components/cards_slide/CardsSlide';
 import pageTheme from 'shared/styles/pageTheme';
 import DataFetcher from 'shared/components/data_fetcher/DataFetcher';
-import getBlogPosts from 'services/blog/getBlogPosts';
-import getEventsPosts from 'services/events/getEventsPosts';
+import blogApi from 'services/blog';
+import eventsApi from 'services/events';
+
+
 
 
 const Index = () => {
   return (
     <div>
-        <Banner/>
+        <Banner
+         labelTitle='Invista em educação, invista no seu'
+         highlightedWord='Futuro'
+         href='/sobre'
+         btnLabel='Saiba Mais'
+         
+        />
         <SectionContainer
           title='Leia Nossos Posts'
         >
           <DataFetcher
-           fetchFunc={getBlogPosts}
+           fetchFunc={blogApi.getBlogPosts}
            Component={CardsSlide}
            propsForComponent={{CardComponent:BlogCard}}
           />
@@ -28,9 +37,9 @@ const Index = () => {
          color={pageTheme.colors.text.secondary.light}
         >
           <DataFetcher
-           fetchFunc={getEventsPosts}
+           fetchFunc={eventsApi.getEventsPosts}
            Component={CardsSlide}
-           propsForComponent={{CardComponent:BlogCard}}
+           propsForComponent={{CardComponent:EventCard}}
           />
         </SectionContainer>
         <SectionContainer

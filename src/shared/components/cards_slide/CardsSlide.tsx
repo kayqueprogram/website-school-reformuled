@@ -88,7 +88,7 @@ const BtnControl = styled.button`
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 8px 10px;
+ padding: 5px;
  border:1px solid currentColor;
  color:currentColor;
  background-color: transparent;

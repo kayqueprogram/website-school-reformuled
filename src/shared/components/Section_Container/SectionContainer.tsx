@@ -10,28 +10,19 @@ import Column from '../column/Column';
 type Props = {
   children: React.ReactNode;
   title?:string;
-  subTitle?:string;
   color?:string;
   backgroundColor?:string;
   isRelative?:boolean;
 }
 
-const SectionContainer = ({children,title,subTitle,isRelative,color,backgroundColor}:Props) => {
+const SectionContainer = ({children,title,isRelative,color,backgroundColor}:Props) => {
   return (
     <Container backgroundColor={backgroundColor} isRelative={isRelative} color={color}>
       <WideWrapping>
         {
           title && (
            <Header>
-             <Column alignItems='center' gap='1.4rem'>
-               <Title>{title}</Title>
-                {subTitle && (
-                <Span fontSize='2.1rem'>
-                 {subTitle}
-                </Span>
-                )
-                } 
-              </Column>
+              <Title>{title}</Title>
            </Header>
           )
         }
@@ -44,18 +35,30 @@ const SectionContainer = ({children,title,subTitle,isRelative,color,backgroundCo
 const Container = styled.section<{backgroundColor?:string,isRelative?:boolean,color?:string}>`
  width: 100%;
  position: ${({isRelative})=>isRelative?'relative':'static'};
- padding: 8rem 0rem;
+ padding: 7.6rem 0rem;
  color:${({color})=>color || 'currentColor'};
  background-color: ${({backgroundColor})=>backgroundColor || 'transparent'};
 
 `;
 
 const Header = styled.div`
+ position: relative;
  display: flex;
  flex-direction:column;
  align-items: flex-start;
  text-align: center;
  margin-bottom: 5.4rem;
+
+ ::after{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -2.6rem;
+  width: 20rem;
+  height: 4px;
+  border-radius: 20px;
+  background-color:${({theme})=>theme.colors.details.secondary.dark};
+ }
 `;
 
 

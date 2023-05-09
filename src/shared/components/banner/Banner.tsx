@@ -3,50 +3,38 @@ import styled from 'styled-components'
 import Column from '../column/Column';
 import Span from '../span/Span';
 import WideWrapping from '../wide_wrapping/WideWrapping';
-import InfoCard from './InfoCard';
-import CardGrid from '../card_grid/CardGrid';
+import CardGrid from '../grid/Grid';
 import { device } from 'shared/styles/breakPoints';
-import RemoveComponentSmallerScreen from '../remove_component_smaller_screen/RemoveComponentSmallerScreen';
-import pageIcons from 'shared/utils/pageIcons';
 import StylizedButton from '../stylized_button/StylizedButton';
 
-const Banner = () => {
+
+
+type TProps = {
+  labelTitle?:string;
+  highlightedWord?:string;
+  image?:string
+  href?:string,
+  btnLabel?:string;
+}
+
+const Banner = ({labelTitle,highlightedWord,image,href,btnLabel}:TProps) => {
+  
+  console.log(labelTitle)
   return (
     <Container>
-      <Image src='https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'/>
+      <Image src={image}/>
        <WideWrapping>
          <Column>
-           <Span fontSize='3.2rem'>
-             THE BEST THEME FOR
-           </Span>
-           <Span fontSize='10rem' fontWeight='bold'>Education</Span>
-           <StylizedButton path='/sobre'>
-             Saiba Mais
-           </StylizedButton>
+           {
+            labelTitle && (<Span fontSize='3.2rem'>{labelTitle}</Span>)
+           }
+           {
+            highlightedWord && (<Span fontSize='10rem' fontWeight='bold'>{highlightedWord}</Span>)
+           }
+           {
+             href && (<StylizedButton path={href}>{btnLabel}</StylizedButton>) 
+           }
          </Column>
-         <RemoveComponentSmallerScreen>
-          <InfoField>
-           <WideWrapping>
-              <CardGrid>
-               <InfoCard
-                title='Educação de qualidade para todos'
-                src='/about'
-                Icon={pageIcons.Star}
-               />
-               <InfoCard
-                 title='Empoderando Mentes, Criando Futuros'
-                 src='/about'
-                 Icon={pageIcons.Idea}
-               />
-               <InfoCard
-                 title='Explore, aprenda, descubra: visite nossa biblioteca'
-                 src='/about'
-                 Icon={pageIcons.Book}
-                />
-              </CardGrid>
-            </WideWrapping>
-           </InfoField>
-         </RemoveComponentSmallerScreen>
         </WideWrapping>
     </Container>
   )
@@ -58,7 +46,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 80rem;
-  background-color: #00000061;
+  background-color: #00000065;
   color: ${({theme})=>theme.colors.text.secondary.light};
 
   @media ${device.md} {
@@ -72,16 +60,9 @@ const Image = styled.img`
  width: 100%;
  height: 100%;
  object-fit: cover;
-`;
-
-const InfoField = styled.div`
- width: 100%;
- position: absolute;
- left: 0;
- bottom: 9%;
+ object-position: bottom;
 `;
 
 
 
-
-export default Banner
+export default Banner;

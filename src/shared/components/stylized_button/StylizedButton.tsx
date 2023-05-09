@@ -3,33 +3,32 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
  
 type TProps = {
-  children:React.ReactNode,
-  path?:string
+  children:React.ReactNode;
+  path?:string;
+  width?:string;
 }
 
-const StylizedButton = ({children,path}:TProps) => {
+const StylizedButton = ({children,path,...styleProps}:TProps) => {
   return (
     <>
-      {
-        path?(
-          <Container>
-            <Link to={path}>{children}</Link>
-          </Container>
-        ):(
-          <Container>
-            {children}
-          </Container>
-        )
-      }
+      <Container {...styleProps}>
+        {
+          path?
+          (<Link to={path}>{children}</Link>)
+          :children
+        }
+      </Container>
     </>
   )
 }
-const Container = styled.button`
+const Container = styled.button<Omit<TProps,'children'>>`
+ width: ${({width})=> width || 'auto'};
  font-size: 1.8rem;
  padding: 14px 2vw;
  border: none;
  font-weight: bold;
  background-color: ${({theme})=>theme.colors.details.secondary.dark};
+
 `;
 
 export default StylizedButton

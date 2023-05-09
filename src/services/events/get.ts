@@ -11,4 +11,4 @@ async function getEventsPosts (){
     return data;
 }
 
-export default getEventsPosts;
+export default {getEventsPosts};

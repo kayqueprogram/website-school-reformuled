@@ -1,0 +1,1 @@
+-> limitar a quantidade de rend no slide 
