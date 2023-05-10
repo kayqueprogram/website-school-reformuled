@@ -32,7 +32,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   object-fit: cover;
 `;
 
