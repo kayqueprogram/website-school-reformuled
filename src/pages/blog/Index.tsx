@@ -13,7 +13,9 @@ import pageTheme from 'shared/styles/pageTheme';
 const Index = () => {
   return (
     <div>
-      <Banner/>
+      <Banner
+        image='https://s2.research.com/wp-content/uploads/2021/07/24113540/im_5_pes-1-1200x600.jpg'
+      />
       <SectionContainer
        title='Não Perca Nossos Eventos'
        backgroundColor={pageTheme.colors.details.primary.dark}

@@ -2,9 +2,6 @@ import React from 'react';
 import WideWrapping from '../wide_wrapping/WideWrapping';
 import styled from 'styled-components';
 import Title from '../title/Title';
-import Span from '../span/Span';
-import Column from '../column/Column';
-
 
 
 type Props = {
@@ -46,7 +43,7 @@ const Header = styled.div`
  display: flex;
  flex-direction:column;
  align-items: flex-start;
- text-align: center;
+ text-align: left;
  margin-bottom: 5.4rem;
 
  ::after{

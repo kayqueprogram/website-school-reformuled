@@ -32,15 +32,14 @@ const CardsGrid = ({CardComponent,data}:TProps) => {
       </Grid>
       <PaginateField>
         <ReactPaginate 
-          previousLabel={'previos'}
-          nextLabel={"Next"}
+          previousLabel={<pageIcons.ArrowLeft/>}
+          nextLabel={<pageIcons.ArrowRight/>}
           pageCount={pageCount}
           onPageChange={changePage}
-          containerClassName={"paginationBttns"}
-          previousLinkClassName={"previousBttn"}
-          nextLinkClassName={"nextBttn"}
+          containerClassName={"pagination"}
+          pageLinkClassName={'btn'}
           disabledClassName={"paginationDisabled"}
-          activeClassName={"paginationActive"} 
+          activeClassName={"activeBtn"} 
         />
       </PaginateField>
     </Column>
@@ -53,11 +52,33 @@ const Container = styled.div`
 `;
 
 const PaginateField = styled.div`
+ width: 100%;
+display: flex;
+justify-content: flex-end;
  padding: 4rem 0px;
 
- .paginationBttns{
+
+ .pagination{
   display: flex;
+  align-items: center;
   list-style: none;
+
+  .btn,.next,.previous,.activeBtn{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+  }
+
+  .activeBtn{
+    background-color: gainsboro;
+  }
+
  }
 
 `;

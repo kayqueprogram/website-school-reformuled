@@ -11,8 +11,8 @@ const Nav = ({isRow}:TProps) => {
     <Container isRow={isRow}>
         <StyledNavLink path='/' label='Home'/>
            <StyledNavLink path='/sobre' label='Sobre'/>
+           <StyledNavLink path='/blog' label='Blog'/>
            <StyledNavLink path='/galeria' label='Galeria'/>
-           <StyledNavLink path='/contato' label='Contato'/>
     </Container>
   )
 }

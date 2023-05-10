@@ -17,6 +17,7 @@ const Paragraph = ({children,...styleProps}:Props) => {
 const Container = styled.p<Omit<Props,'children'>>`
   width: 90%;
   font-size: 2rem;
+  line-height: 240%;
   text-align:${({textAlign})=>textAlign || 'justify'};
 `;
 
