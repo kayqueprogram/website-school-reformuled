@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import WideWrapping from 'shared/components/wide_wrapping/WideWrapping';
 
 const Footer = () => {
   const handleClick = () => {
@@ -8,10 +9,12 @@ const Footer = () => {
 
   return (
     <Container>
-      <div>Footer</div> - <div>footer</div>
-      <Button onClick={handleClick}>
-       ^
-      </Button>
+      <WideWrapping>
+        <div>Footer</div> - <div>footer</div>
+        <Button onClick={handleClick}>
+          ^
+        </Button>
+      </WideWrapping>
     </Container>
   )
 }

@@ -18,16 +18,16 @@ type TCardProps = {
 const BlogCard = ({id,title, image, content }: TCardProps) => {
   return (
     <Container>
-      <Link to={`/blog/${id}`}>
+      
         <Column>
           <CardImage src={image} alt={title} />
           {title && <Span fontSize="1.8rem" fontWeight='bold'>{cutString(title, 54)}...</Span>}
           {content && <Span fontSize="1.4rem">{cutString(content, 92)}...</Span>}
           <StylizedButton width="100%">
-            <Link to='/'>Ler mais</Link>
+          <Link to={`/blog/${id}`}> Ler mais</Link>
           </StylizedButton>
         </Column>
-      </Link>
+      
     </Container>
   );
 };
