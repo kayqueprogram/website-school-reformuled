@@ -43,7 +43,21 @@ const Index = () => {
       } {
         post?.vid1 && (
                   <Column gap='2.6rem'>
-                    <video src={post.vid1}></video>
+                    <video controls src={post.vid1}></video>
+                  </Column>
+                )
+      }
+       {
+        post?.vid2 && (
+                  <Column gap='2.6rem'>
+                    <video controls src={post.vid2}></video>
+                  </Column>
+                )
+      }
+       {
+        post?.vid3 && (
+                  <Column gap='2.6rem'>
+                    <video controls src={post.vid3}></video>
                   </Column>
                 )
       }
