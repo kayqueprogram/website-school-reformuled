@@ -10,7 +10,7 @@ const Footer = () => {
   return (
       <Container>
 
-        <div>Footer</div> - <div>footer</div>
+        <div>Desenvolvedores</div> - <div>footer</div>
         <Button onClick={handleClick}>
           ^
         </Button>
