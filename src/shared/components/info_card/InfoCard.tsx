@@ -21,12 +21,12 @@ const InfoCard = ({title,src,Icon}:Props) => {
         <Icon fontSize='6rem' color={pageTheme.colors.details.secondary.dark}/>
         <Column gap='1.3rem'>
           <Span  maxWidth='96%' fontSize='2rem' fontWeight='bold' textTransform='uppercase'>
-            BEST INDUSTRY LEADERS
+          Educação de qualidade para todos
           </Span>
           <Span textTransform='uppercase' fontWeight='bold' color={pageTheme.colors.details.secondary.dark}>
             <Link to={src}>
               <Row>
-                <span>VIEW MORE</span>
+                <span>VEJA MAIS</span>
                 <pageIcons.ArrowRight/>
               </Row>
             </Link>

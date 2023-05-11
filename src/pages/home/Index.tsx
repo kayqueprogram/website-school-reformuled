@@ -23,7 +23,7 @@ const Index = () => {
         <Banner
          labelTitle='Invista em educação, invista no seu'
          highlightedWord='Futuro'
-         href='/sobre'
+         href='/'
          btnLabel='Saiba Mais'
          image='https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
          >
@@ -33,19 +33,9 @@ const Index = () => {
                <Grid>
                 <InfoCard
                 title='Educação de qualidade para todos'
-                src='/about'
+                src='/'
                 Icon={pageIcons.Star}
                />
-               <InfoCard
-                 title='Empoderando Mentes, Criando Futuros'
-                 src='/about'
-                 Icon={pageIcons.Idea}
-               />
-               <InfoCard
-                 title='Explore, aprenda, descubra: visite nossa biblioteca'
-                 src='/about'
-                 Icon={pageIcons.Book}
-                />
               </Grid>
               </WideWrapping>
              </Absolute>
