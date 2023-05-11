@@ -8,14 +8,16 @@ const Footer = () => {
   };
 
   return (
-    <Container>
-  
+    <WideWrapping>
+      <Container>
+
         <div>Footer</div> - <div>footer</div>
         <Button onClick={handleClick}>
           ^
         </Button>
-      
-    </Container>
+
+      </Container>
+    </WideWrapping>
   )
 }
 
