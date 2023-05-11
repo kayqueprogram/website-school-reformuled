@@ -27,19 +27,6 @@ const Index = () => {
          btnLabel='Saiba Mais'
          image='https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
          >
-           <RemoveComponentSmallerScreen>
-             <Absolute bottom={40}>
-              <WideWrapping>
-               <Grid>
-                <InfoCard
-                title='Educação de qualidade para todos'
-                src='/'
-                Icon={pageIcons.Star}
-               />
-              </Grid>
-              </WideWrapping>
-             </Absolute>
-           </RemoveComponentSmallerScreen>
           </Banner>
         <SectionContainer
           title='Leia Nossos Posts'

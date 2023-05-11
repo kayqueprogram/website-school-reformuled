@@ -40,6 +40,12 @@ const Index = () => {
            {breakStr(post.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
          </Column>
         )
+      } {
+        post?.vid1 && (
+                  <Column gap='2.6rem'>
+                    <video src={post.video}></video>
+                  </Column>
+                )
       }
       </SectionContainer>
     </>
