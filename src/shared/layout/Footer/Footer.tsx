@@ -9,12 +9,12 @@ const Footer = () => {
 
   return (
     <Container>
-      <WideWrapping>
+  
         <div>Footer</div> - <div>footer</div>
         <Button onClick={handleClick}>
           ^
         </Button>
-      </WideWrapping>
+      
     </Container>
   )
 }
