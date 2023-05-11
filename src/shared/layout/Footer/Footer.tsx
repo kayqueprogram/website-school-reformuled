@@ -5,7 +5,7 @@ const Footer = () => {
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  
+
   return (
     <Container>
       <div>Footer</div> - <div>footer</div>
@@ -26,6 +26,7 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
+padding: 10px;
   background-color: blue;
   border: none;
   cursor: pointer;
