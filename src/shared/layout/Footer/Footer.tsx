@@ -8,7 +8,6 @@ const Footer = () => {
   };
 
   return (
-    <WideWrapping>
       <Container>
 
         <div>Footer</div> - <div>footer</div>
@@ -17,7 +16,7 @@ const Footer = () => {
         </Button>
 
       </Container>
-    </WideWrapping>
+ 
   )
 }
 
