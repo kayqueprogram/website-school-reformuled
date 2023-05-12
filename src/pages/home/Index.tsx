@@ -48,10 +48,6 @@ const Index = () => {
            propsForComponent={{CardComponent:EventCard}}
           />
         </SectionContainer>
-        <SectionContainer
-         title='O que as Pessoas Têm a Dizer'
-        >
-        </SectionContainer>
     </div>
   )
 }
