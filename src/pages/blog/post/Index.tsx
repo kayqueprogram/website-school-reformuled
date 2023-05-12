@@ -62,6 +62,12 @@ const Index = () => {
                   </Video>
                 )
       }
+      {     post?.vid4 && (
+                  <Video>
+                    <video controls src={post.vid4}></video>
+                  </Video>
+                )
+      }
       </SectionContainer>
     </>
   )
