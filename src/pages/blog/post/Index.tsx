@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import styled from 'styled-components'
 import blogApi from 'services/blog';
 import { useParams } from 'react-router-dom';
 import Banner from 'shared/components/banner/Banner';
@@ -42,28 +43,42 @@ const Index = () => {
         )
       } {
         post?.vid1 && (
-                  <Column gap='2.6rem'>
+                  <Video>
                     <video controls src={post.vid1}></video>
-                  </Column>
+                  </Video>
                 )
       }
        {
         post?.vid2 && (
-                  <Column gap='2.6rem'>
+                  <Video>
                     <video controls src={post.vid2}></video>
-                  </Column>
+                  </Video>
                 )
       }
        {
         post?.vid3 && (
-                  <Column gap='2.6rem'>
+                  <Video>
                     <video controls src={post.vid3}></video>
-                  </Column>
+                  </Video>
                 )
       }
       </SectionContainer>
     </>
   )
 }
+
+const Video = styled.div`
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  video {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+`;
 
 export default Index
