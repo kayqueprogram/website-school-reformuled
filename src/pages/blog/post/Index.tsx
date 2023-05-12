@@ -98,11 +98,10 @@ const Video = styled.div`
 const Container = styled.div`
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: center;
 
 margin: auto;
 border-radius: 23px;
-background-color: ${({ theme }) => theme.colors.details.primary.dark};
 color: ${({ theme }) => theme.colors.text.secondary.light};
 padding: 20px;
 padding-top: 100px;
