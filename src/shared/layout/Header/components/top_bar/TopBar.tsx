@@ -12,11 +12,11 @@ const TopBar = () => {
         <Row gap='2.6rem' alignItems='center'>
            <Row gap='8px' alignItems='center'>
              <pageIcons.Tel fontSize='1.2em'/>
-             <Span fontSize='1.8rem'>Tel: 88-88888-8888</Span>
+             <Span fontSize='1.8rem'>Tel: +55 11 4354-7192</Span>
            </Row>
            <Row gap='8px' alignItems='center'>
              <pageIcons.Email fontSize='1.2em'/>
-             <Span fontSize='1.8rem'>Email: emailHere@gmail.com</Span>
+             <Span fontSize='1.8rem'>Email: coordenacaobassani2022@gmail.com</Span>
            </Row>
         </Row>
       </WideWrapping>
