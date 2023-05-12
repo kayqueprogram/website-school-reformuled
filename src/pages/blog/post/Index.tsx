@@ -41,7 +41,9 @@ const Index = () => {
            {breakStr(post.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
          </Column>
         )
-      } {
+      } 
+      </SectionContainer>
+      {
         post?.vid1 && (
                   <Video>
                     <video controls src={post.vid1}></video>
@@ -68,7 +70,6 @@ const Index = () => {
                   </Video>
                 )
       }
-      </SectionContainer>
     </>
   )
 }
