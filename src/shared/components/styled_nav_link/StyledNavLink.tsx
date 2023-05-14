@@ -8,8 +8,13 @@ type TProps = {
 }
 
 const StyledNavLink = ({path,state}:TProps) => {
+ 
+  const handleClick = () =>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
-    <Container to={path}>
+    <Container to={path} onClick={handleClick}>
       {state}
     </Container>
   )
