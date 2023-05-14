@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BlogCard from 'shared/components/blog_card/BlogCard';
 import EventCard from 'shared/components/event_card/EventCard';
 import SectionContainer from 'shared/components/Section_Container/SectionContainer';
@@ -31,12 +32,12 @@ const Index = () => {
             <Image src='https://polyuni.com.br/pluginfile.php/173/block_cocoon_about_1/content/shutterstock_366568778.png' maxHeight='70rem'/>
           </div>
           <Column gap='14px'>
-              <Title>You Can Do More at Nebraska</Title>
+              <Title>Você pode mais no Bassani</Title>
               <Paragraph>
-              You have the power to shape your future and impact the world. At Nebraska, the people behind our Big Ten academic programs are with you every step of the way. Let’s build on your strengths toward a career, connect you with a community of Huskers and do big things.
+             Bem-vindo à Escola Omar Donato Bassani, um lugar onde os alunos prosperam academicamente, pessoalmente e socialmente. Nossa escola se dedica a fornecer um ambiente inclusivo e de apoio que capacita os alunos a perseguir seus projetos e alcançar seus objetivos.
               </Paragraph>
               <StylizedButton>Sobre Nós</StylizedButton>
-              <StylizedButton>Leia Nosso Blog</StylizedButton>
+              <StylizedButton><Link to='/blog'>Leia Nosso Blog</Link></StylizedButton>
           </Column>
         </RowToColumn>
       </SectionContainer>
@@ -44,7 +45,7 @@ const Index = () => {
         backgroundColor={pageTheme.colors.details.primary.dark}
         color={pageTheme.colors.text.secondary.light}
         title='Leia Nossos Posts'
-        subtitle='Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world'
+        subtitle='Preparando os alunos para fazer contribuições significativas para a sociedade como cidadãos engajados e líderes em um mundo cheio de desafios'
       >
           <DataFetcher
            fetchFunc={blogApi.getBlogPosts}
@@ -70,12 +71,12 @@ const Index = () => {
             <Image src='https://polyuni.com.br/pluginfile.php/171/block_cocoon_about_1/content/shutterstock_1145576060.png'/>
           </div>
           <Column gap='14px'>
-              <Title>You Can Do More at Nebraska</Title>
+              <Title>Extraia o melhor de si</Title>
               <Paragraph>
-              You have the power to shape your future and impact the world. At Nebraska, the people behind our Big Ten academic programs are with you every step of the way. Let’s build on your strengths toward a career, connect you with a community of Huskers and do big things.
+              Oferecemos um programa acadêmico abrangente e rigoroso que prepara os alunos para o sucesso na faculdade e além. Nosso currículo é projetado para desafiar os alunos, fornecendo-lhes as habilidades e conhecimentos de que precisam para se destacar em um mundo de grandes transformações.
               </Paragraph>
               <StylizedButton>Sobre Nós</StylizedButton>
-              <StylizedButton>Leia Nosso Blog</StylizedButton>
+              <StylizedButton><Link to='/blog'>Leia Nosso Blog</Link></StylizedButton>
           </Column>
         </RowToColumn>
       </SectionContainer>
