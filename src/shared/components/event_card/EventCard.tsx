@@ -26,7 +26,7 @@ const EventCard = ({title,image}:TCardProps) => {
 }
 
 const Container = styled.div`
-  transition: .2s;
+  transition: .3s;
 
   &:hover{
     transform: scale(1.02);
