@@ -8,6 +8,9 @@ const pageTheme = {
             secondary: {
                 dark: '#F6BA07',
                 light:'rgb(231 173 0 / 36%)'
+            },
+            third:{
+                dark:'rgb(183 101 217)'
             }
         },
         text: {

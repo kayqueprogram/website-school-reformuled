@@ -10,9 +10,10 @@ const Title = ({children}:{children:React.ReactNode}) => {
 }
 
 const Container = styled.h1`
-  width: 86%;
-  font-size: 3.6rem;
-  font-size: clamp(1em, 1.6em + 1.5vw, 2.4em);
+  width: 92%;
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-size: clamp(1em, 1.6em + 1.5vw, 3.3em);
 `;
 
 export default Title

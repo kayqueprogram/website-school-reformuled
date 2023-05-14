@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Column from '../column/Column';
+import Image from '../image/Image';
 import Span from '../span/Span';
 import cutString from 'shared/utils/cutString';
 
@@ -13,12 +13,14 @@ type TCardProps = {
 const EventCard = ({title,image}:TCardProps) => {
   return (
     <Container>
-      <Link to={'/'}>
-        <Column gap='14px'>
-          <Image src={image}/>
-          <Span fontSize="1.8rem" fontWeight='bold'>{cutString(title, 54)}</Span>
-        </Column>
-      </Link>
+      <Column>
+        <Image src={image}/>
+        <DataField>
+           <Column>
+             <Span fontSize='2.2rem' fontWeight='bold'>{title}</Span>
+           </Column>
+        </DataField>
+      </Column>
     </Container>
   )
 }
@@ -30,10 +32,10 @@ const Container = styled.div`
  }
 `;
 
-const Image = styled.img`
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
+const DataField = styled.div`
+ padding: 20px 0px;
 `;
+
+
 
 export default EventCard

@@ -6,40 +6,35 @@ import WideWrapping from '../wide_wrapping/WideWrapping';
 import CardGrid from '../grid/Grid';
 import { device } from 'shared/styles/breakPoints';
 import StylizedButton from '../stylized_button/StylizedButton';
-import Title from '../title/Title';
-
+import Image from '../image/Image';
 
 
 type TProps = {
-  children?:React.ReactNode
-  labelTitle?:string;
-  highlightedWord?:string;
+  title?:string;
   image?:string
   href?:string,
   btnLabel?:string;
 }
 
-const Banner = ({children,labelTitle,highlightedWord,image,href,btnLabel}:TProps) => {
+const Banner = ({title,image,href,btnLabel}:TProps) => {
   
-  console.log(labelTitle)
   return (
     <Container>
-      <Image src={image}/>
+      <Absolute>
+        <Image height='100%' src={image}/>
+      </Absolute>
        <WideWrapping>
          <TextField>
-          <Column gap='10px'>
+          <Column gap='3rem'>
            {
-            labelTitle && (<Span maxWidth={'80%'} fontSize='2.6rem'>{labelTitle}</Span>)
+            title && (<Span maxWidth={'80%'} fontWeight='bold' fontSize='6rem'>{title}</Span>)
            }
-           {
-            highlightedWord && (<Span fontSize='7.6rem' fontWeight='bold'>{highlightedWord}</Span>)
-           }
+  
            {
              href && (<StylizedButton path={href}>{btnLabel}</StylizedButton>) 
            }
          </Column>
          </TextField>
-          {children}
         </WideWrapping>
     </Container>
   )
@@ -50,8 +45,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80rem;
-  background-color: #0000006a;
+  min-height: 92rem;
+  background-color: #12121381;
   color: ${({theme})=>theme.colors.text.secondary.light};
 
   @media ${device.md} {
@@ -63,13 +58,12 @@ const TextField = styled.div`
  max-width: 880px;
 `;
 
-const Image = styled.img`
+const Absolute = styled.div`
  position: absolute;
  z-index: -1;
  width: 100%;
  height: 100%;
- object-fit: cover;
- object-position: center;
+
 `;
 
 

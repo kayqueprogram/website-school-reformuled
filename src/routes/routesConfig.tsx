@@ -8,26 +8,24 @@ import Post from 'pages/blog/post/Index';
 const routesConfig = [
   {
     path:'/',
-    label:'Home',
+    state:'Home',
     Component:<PageLayout><Home/></PageLayout>
   },
   {
     path: '/galeria',
-    label: 'Galeria',
+    state: 'Galeria',
     Component:<PageLayout><Galeria/></PageLayout>
   },
   {
     path: '/galeria/prjD',
-    label:'Projeto dia D',
     Component:<PageLayout><DiaD/></PageLayout>
   },
   {
     path:'/blog',
-    label:'Blog',
+    state:'Blog',
     Component:<PageLayout><Blog/></PageLayout>
   },{
     path:'/blog/:id',
-    label:'Blog Post',
     Component:<PageLayout><Post/></PageLayout>
   }
 ];

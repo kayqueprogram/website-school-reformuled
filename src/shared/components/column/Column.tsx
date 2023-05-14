@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 type Props = {
   children:React.ReactNode;
+  width?:string;
   alignItems?:'stretch'|'flex-start'|'flex-end'|'baseline'|'center';
   gap?:string;
 }
@@ -16,7 +17,7 @@ const Column = ({children,...styleProps}:Props) => {
 }
 
 const Container = styled.div<Omit<Props,'children'>>`
- // width: 100%;
+  width:${({width})=>width || 'auto'};
   display: flex;
   flex-direction: column;
   align-items:${({alignItems})=>alignItems || 'flex-start'};

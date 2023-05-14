@@ -6,15 +6,16 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: 'Source Sans Pro', sans-serif;
     }
 
    html{
     font-size: 62.5%;
-    font-family: 'Noto Sans KR', sans-serif;
    }
 
     body {
        font-size: 1.6rem;
+       background-color:rgb(223 223 223);
     }
 
     a {

@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 type TProps = {
  path:string,
- label:string
+ state:string
 }
 
-const StyledNavLink = ({path,label}:TProps) => {
+const StyledNavLink = ({path,state}:TProps) => {
   return (
     <Container to={path}>
-      {label}
+      {state}
     </Container>
   )
 }

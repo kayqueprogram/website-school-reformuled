@@ -28,8 +28,7 @@ const Index = () => {
   return (
     <>
       <Banner
-        labelTitle={post?.title}
-        highlightedWord='Não Deixe de Ler'
+        title={post?.title}
         image={post?.image}
       />
       <SectionContainer

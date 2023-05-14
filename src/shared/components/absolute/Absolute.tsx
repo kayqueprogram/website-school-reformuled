@@ -21,7 +21,7 @@ const Container = styled.div<Omit<TProps,'children'>>`
  position: absolute;
  width: 100%;
  top: ${({top})=>top || 'auto'};
- bottom: ${({bottom})=>bottom || 'auto'};
+ bottom: ${({bottom})=>bottom ||'auto'};
  left: ${({left})=>left || 0};
  right: ${({right})=>right || 'auto'};
 `;

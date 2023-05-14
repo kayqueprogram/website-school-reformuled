@@ -28,7 +28,7 @@ const Container = styled.button<Omit<TProps,'children'>>`
  border: none;
  font-weight: bold;
  background-color: ${({theme})=>theme.colors.details.secondary.dark};
-
+ cursor: pointer;
 `;
 
 export default StylizedButton

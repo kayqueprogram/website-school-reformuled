@@ -9,9 +9,9 @@ type TProps = {
 const Nav = ({isRow}:TProps) => {
   return (
     <Container isRow={isRow}>
-        <StyledNavLink path='/' label='Home'/>
-           <StyledNavLink path='/blog' label='Blog'/>
-           <StyledNavLink path='/galeria' label='Galeria'/>
+        <StyledNavLink path='/' state='Home'/>
+           <StyledNavLink path='/blog' state='Blog'/>
+           <StyledNavLink path='/galeria' state='Galeria'/>
     </Container>
   )
 }

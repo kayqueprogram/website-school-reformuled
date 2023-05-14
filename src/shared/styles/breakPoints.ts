@@ -2,7 +2,7 @@ const size = {
     xs: '400px', // pequeno
     sm: '600px', // tela mobile
     md: '900px', // tela tablet
-    lg: '1280px', // laptops
+    lg: '1024px', // laptops
     xl: '1440px', // computadores/monitores
     xxl: '1920px', // telas muto grandes
 }
