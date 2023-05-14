@@ -1,7 +1,6 @@
 import React from "react";
 import cutString from "shared/utils/cutString";
 import Span from "../span/Span";
-import StylizedButton from "../stylized_button/StylizedButton";
 import Column from "../column/Column";
 import Image from "../image/Image";
 import StylizedLink from "../stylized_link/StylizedLink";
@@ -10,13 +9,16 @@ import pageIcons from "shared/utils/pageIcons";
 import pageTheme from "shared/styles/pageTheme";
 
 type TCardProps = {
+  path:string
   id:string;
   title: string;
   image: string;
   content: string;
 };
 
-const BlogCard = ({id,title, image, content }: TCardProps) => {
+const BlogCard = ({id,title, image, content,path }: TCardProps) => {
+
+
   return (
     <>
      <Column>
@@ -28,7 +30,7 @@ const BlogCard = ({id,title, image, content }: TCardProps) => {
          <Span fontSize="1.8rem">
           {cutString(content, 92)}...
          </Span>
-         <StylizedLink to={`blog/${id}`}>
+         <StylizedLink to={`${path || '/blog'}/${id}`}>
             <Span fontSize="2rem" fontWeight='bold' color={pageTheme.colors.details.secondary.dark}>
               <Row alignItems="center">
                  <span>Continue Lendo o Post</span>

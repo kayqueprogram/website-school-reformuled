@@ -7,8 +7,9 @@ import pageIcons from 'shared/utils/pageIcons';
 
 
 type TProps = {
-    CardComponent:React.FC<any>,
-    data:Array<any>
+    CardComponent:React.FC<any>;
+    cardPath:string;
+    data:Array<any>;
 }
 
 const slideConfig = {
@@ -29,7 +30,7 @@ const slideConfig = {
   }
 }
 
-const CardsSlide = ({CardComponent,data}:TProps) => {
+const CardsSlide = ({CardComponent,cardPath,data}:TProps) => {
   const [refIsNotNull,setRefIsNotNull] = useState(false);
   const navigationPrevRef = useRef<HTMLButtonElement>(null)
   const navigationNextRef = useRef<HTMLButtonElement>(null)
@@ -68,7 +69,7 @@ const CardsSlide = ({CardComponent,data}:TProps) => {
               {
                 data.map((el)=>(
                    <SwiperSlide key={el?.id}>
-                     <CardComponent {...el}/>
+                     <CardComponent {...el} path={cardPath}/>
                    </SwiperSlide>
                  )
                  )

@@ -33,7 +33,7 @@ const Index = () => {
         <DataFetcher
           fetchFunc={blogApi.getBlogPosts}
           Component={CardsGrid}
-          propsForComponent={{CardComponent:BlogCard}}
+          propsForComponent={{CardComponent:BlogCard, cardPath:'/'}}
         />
 
       </SectionContainer>
