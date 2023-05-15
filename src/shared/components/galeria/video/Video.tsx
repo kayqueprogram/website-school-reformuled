@@ -1,5 +1,4 @@
 import React from 'react';
-import "node_modules/video-react/dist/video-react.css"
 import styled from 'styled-components';
 import { Player } from 'video-react';
 
