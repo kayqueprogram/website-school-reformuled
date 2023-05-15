@@ -40,7 +40,8 @@ const Video = styled.div`
 `;
 
 
-const Title = styled.h2`
+const Title = styled.h1`
+display: block;
   margin-top: 1rem;
   font-size: 1.2rem;
 `;
