@@ -30,7 +30,7 @@ const Video = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   padding-bottom: 56.25%;
 
