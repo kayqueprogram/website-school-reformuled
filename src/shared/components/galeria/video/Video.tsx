@@ -33,10 +33,6 @@ const Video = styled.div`
   max-width: 600px;
   width: 100%;
   padding-bottom: 56.25%;
-
-  video {
-    width: 100%;
-  }
 `;
 
 const Title = styled.h2`
