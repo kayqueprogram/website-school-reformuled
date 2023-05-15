@@ -82,7 +82,11 @@ const CardsSlide = ({CardComponent,cardPath,data}:TProps) => {
   )
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+ .swiper-slide>*{
+   height: 100%;
+ }
+`;
 
 const BtnControl = styled.button`
  font-size: 2.6rem;

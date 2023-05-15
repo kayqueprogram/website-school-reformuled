@@ -4,6 +4,7 @@ import styled from 'styled-components';
 type Props = {
   children:React.ReactNode;
   width?:string;
+  justifyContent?:string;
   alignItems?:'stretch'|'flex-start'|'flex-end'|'baseline'|'center';
   gap?:string;
 }
@@ -20,6 +21,7 @@ const Container = styled.div<Omit<Props,'children'>>`
   width:${({width})=>width || 'auto'};
   display: flex;
   flex-direction: column;
+  justify-content: ${({justifyContent})=> justifyContent || 'start' };
   align-items:${({alignItems})=>alignItems || 'flex-start'};
   color: currentColor;
 

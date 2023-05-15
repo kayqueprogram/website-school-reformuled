@@ -21,7 +21,7 @@ const BlogCard = ({id,title, image, content,path }: TCardProps) => {
 
   return (
     <>
-     <Column>
+     <Column justifyContent='space-between'>
        <Image src={image} height="36rem"/>
        <Column gap="1.8rem">
          <Span fontSize="2.3rem" fontWeight='700'>
