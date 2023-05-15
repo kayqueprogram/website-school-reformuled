@@ -28,7 +28,7 @@ const Container = styled.div`
 const Video = styled.div`
   margin: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 400px;
   width: 100%;
