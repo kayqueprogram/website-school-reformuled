@@ -8,8 +8,13 @@ type TProps = {
 }
 
 const StylizedLink = ({children,to,...styleProps}:TProps) => {
+
+  const handleClick = () =>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
-    <Container to={to} {...styleProps}>
+    <Container to={to} {...styleProps} onClick={handleClick}>
       {children}
     </Container>
   )
