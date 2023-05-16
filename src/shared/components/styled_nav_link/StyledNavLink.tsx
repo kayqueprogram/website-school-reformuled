@@ -21,7 +21,7 @@ const StyledNavLink = ({path,state}:TProps) => {
 }
 
 const Container = styled(NavLink)`
-  font-size: 1.8rem;
+  width: 100%;
   padding: 6px;
   border-bottom: 3px solid transparent;
   border-radius: 2px;

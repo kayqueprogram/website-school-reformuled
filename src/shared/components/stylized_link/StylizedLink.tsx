@@ -21,7 +21,7 @@ const StylizedLink = ({children,to,...styleProps}:TProps) => {
 }
 
 const Container = styled(Link)`
- 
+  
 `;
 
 export default StylizedLink
