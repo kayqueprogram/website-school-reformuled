@@ -7,6 +7,7 @@ import SectionContainer from 'shared/components/Section_Container/SectionContain
 import Column from 'shared/components/column/Column';
 import { breakStr } from 'shared/utils/breakStr';
 import Paragraph from 'shared/components/paragraph/Paragraph';
+import AudioPlayer from 'shared/components/galeria/audio/AudioPlayer';
 
 const Index = () => {
   const [post, setPost] = useState<any>({});
@@ -73,6 +74,12 @@ const Index = () => {
           <Video>
             <video controls src={post.vid4}></video>
           </Video>
+        </Container>
+      )
+      }
+      {post?.aud1 && (
+        <Container>
+          <AudioPlayer src={post.aud1} />
         </Container>
       )
       }

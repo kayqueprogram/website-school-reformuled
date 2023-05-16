@@ -28,7 +28,7 @@ const Index = () => {
         />
       </SectionContainer>
       <SectionContainer
-      title='Fique Ligado a todos nossos posts'
+      title='Fique Ligado a todos os nossos posts'
       >
         <DataFetcher
           fetchFunc={blogApi.getBlogPosts}
