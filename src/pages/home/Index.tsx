@@ -45,7 +45,7 @@ const Index = () => {
         backgroundColor={pageTheme.colors.details.primary.dark}
         color={pageTheme.colors.text.secondary.light}
         title='Leia Nossos Posts'
-        subtitle='Preparando os alunos para fazer contribuições significativas para a sociedade como cidadãos engajados e líderes em um mundo cheio de desafios'
+        subtitle='Preparando os alunos para fazer contribuições significativas para a sociedade, como cidadãos engajados e líderes em um mundo cheio de desafios'
       >
           <DataFetcher
            fetchFunc={blogApi.getBlogPosts}

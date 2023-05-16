@@ -83,7 +83,7 @@ const Index = () => {
 const Video = styled.div`
   margin: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   max-width: 400px;
   width: 100%;

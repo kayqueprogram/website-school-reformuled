@@ -15,7 +15,7 @@ const MobileMenu = () => {
       </IconBtn>
       {navIsOpen && (
         <NavField>
-          <Column gap="16px" alignItems="flex-end">
+          <Column gap="16px" alignItems="flex-end" width='100%'>
             <IconBtn onClick={() => setNavIsOpen(false)}>
               <pageIcons.Close />
             </IconBtn>
@@ -30,6 +30,7 @@ const MobileMenu = () => {
 const NavField = styled.div`
   position: fixed;
   width: 100%;
+  
   left: 0;
   top: 0;
   height: 100vh;
@@ -37,6 +38,10 @@ const NavField = styled.div`
   text-align: right;
   background-color: ${({ theme }) => theme.colors.details.primary.dark};
   color: ${({ theme }) => theme.colors.text.secondary.light};
+ 
+  a {
+    font-size: 1.5rem;
+  }
 `;
 
 export default MobileMenu;
