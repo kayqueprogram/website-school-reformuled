@@ -30,7 +30,7 @@ const MobileMenu = () => {
 const NavField = styled.div`
   position: fixed;
   width: 100%;
-  font-size: 50%;
+  font-size: 250px;
   left: 0;
   top: 0;
   height: 100vh;
