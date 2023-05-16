@@ -38,7 +38,10 @@ const NavField = styled.div`
   text-align: right;
   background-color: ${({ theme }) => theme.colors.details.primary.dark};
   color: ${({ theme }) => theme.colors.text.secondary.light};
-  font-size: 1rem;
+ 
+  a {
+    font-size: 1.5rem;
+  }
 `;
 
 export default MobileMenu;
