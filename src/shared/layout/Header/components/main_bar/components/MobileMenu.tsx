@@ -34,7 +34,7 @@ const NavField = styled.div`
   top: 0;
   height: 100vh;
   padding: 78px 30px 0px 30px;
-  text-align: right;
+  text-align: center;
   background-color: ${({ theme }) => theme.colors.details.primary.dark};
   color: ${({ theme }) => theme.colors.text.secondary.light};
  
