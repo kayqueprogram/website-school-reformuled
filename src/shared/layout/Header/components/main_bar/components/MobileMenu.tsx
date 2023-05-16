@@ -15,7 +15,7 @@ const MobileMenu = () => {
       </IconBtn>
       {navIsOpen && (
         <NavField>
-          <Column gap="16px" alignItems="flex-end" width='100%'>
+          <Column gap="16px" alignItems="center" width='100%'>
             <IconBtn onClick={() => setNavIsOpen(false)}>
               <pageIcons.Close />
             </IconBtn>
