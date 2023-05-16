@@ -22,7 +22,7 @@ const Container = styled.button<Omit<TProps,'children'>>`
   justify-content: center;
   align-items: center;
   color:${({theme})=> theme.colors.text.secondary.light};
-  border: none;
+  border: 1px solid white;
   border-radius: 50%;
   background-color: ${({theme})=> theme.colors.details.primary.dark};
 `;
