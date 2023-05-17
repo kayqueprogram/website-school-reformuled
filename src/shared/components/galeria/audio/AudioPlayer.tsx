@@ -1,11 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 
-import PlayIcon from '../../../../assets/play.svg';
-import PauseIcon from '../../../../assets/pause.svg';
-import BackwardIcon from '../../../../assets/backward.svg';
-import ForwardIcon from '../../../../assets/foward.svg';
-
 interface AudioPlayerProps {
   src: string;
 }
@@ -27,33 +22,13 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
     }
   };
 
-  const handleForward = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    audio.currentTime += 10; // Avança 10 segundos
-  };
-
-  const handleBackward = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    audio.currentTime -= 10; // Retrocede 10 segundos
-  };
-
   return (
     <Container>
-      <audio ref={audioRef} src={src} />
+      <Audio ref={audioRef} src={src} />
       <Controls>
         <PlayButton onClick={togglePlay}>
-          {isPlaying ? <PauseIcon /> : <PlayIcon />}
+          <Icon className={isPlaying ? 'pause' : 'play'} />
         </PlayButton>
-        <ControlButton onClick={handleBackward}>
-          <BackwardIcon />
-        </ControlButton>
-        <ControlButton onClick={handleForward}>
-          <ForwardIcon />
-        </ControlButton>
       </Controls>
     </Container>
   );
@@ -61,31 +36,41 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
+`;
+
+const Audio = styled.audio`
+  display: none;
 `;
 
 const Controls = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  align-items: center;
 `;
 
-const Button = styled.button`
+const PlayButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
 `;
 
-const PlayButton = styled(Button)`
-  font-size: 24px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+const Icon = styled.div`
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 8px;
 
-const ControlButton = styled(Button)`
-  margin: 0 8px;
-  font-size: 16px;
-  color: ${({ theme }) => theme.colors.secondary};
+  &.play {
+    background-color: #333;
+  }
+
+  &.pause {
+    background-color: #f00;
+  }
 `;
 
 export default AudioPlayer;
