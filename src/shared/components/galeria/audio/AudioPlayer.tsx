@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 
-import PlayIcon from '../../../../../public/play.svg';
-import PauseIcon from '../../../../../public/pause.svg';
-import BackwardIcon from '../../../../../public/backward.svg';
-import ForwardIcon from '../../../../../public/foward.svg';
+import PlayIcon from '../../../../assets/play.svg';
+import PauseIcon from '../../../../assets/pause.svg';
+import BackwardIcon from '../../../../assets/backward.svg';
+import ForwardIcon from '../../../../assets/foward.svg';
 
 interface AudioPlayerProps {
   src: string;
