@@ -40,7 +40,7 @@ const Container = styled.div`
 `;
 
 const Audio = styled.audio`
-  display: none;
+  
 `;
 
 const Controls = styled.div`
