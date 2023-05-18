@@ -6,6 +6,7 @@ const AudioPlayerWrapper = styled.div`
   color: #000;
   border-radius: 10px;
   padding: 20px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -83,6 +83,24 @@ const Index = () => {
         </Container>
       )
       }
+      {post?.aud2 && (
+        <Container>
+          <AudioPlayer src={post.aud2} title={post.titleAud2} />
+        </Container>
+      )
+      }
+      {post?.aud3 && (
+        <Container>
+          <AudioPlayer src={post.aud3} title={post.titleAud3} />
+        </Container>
+      )
+      }
+      {post?.aud4 && (
+        <Container>
+          <AudioPlayer src={post.aud4} title={post.titleAud4} />
+        </Container>
+      )
+      }
     </>
   )
 }
