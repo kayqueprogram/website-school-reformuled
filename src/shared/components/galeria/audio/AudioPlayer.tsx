@@ -31,7 +31,17 @@ const AudioPlayer = ({src}: {src:string}) => {
   const audioRef = React.useRef<HTMLAudioElement>(null);
 
   const togglePlay = () => {
-    setIsPlaying(!isPlaying);
+   const audio = audioRef.current;
+    if (!audio) return;
+
+    if (audio.paused) {
+      audio.play();
+      setIsPlaying(true);
+    }  else {
+      audio.pause();
+      setIsPlaying(false);
+    }
+  
   };
 
   const skipBackward = () => {
