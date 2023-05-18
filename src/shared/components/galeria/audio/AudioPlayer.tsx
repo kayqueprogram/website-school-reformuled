@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const AudioPlayerWrapper = styled.div`
   background-color: #f8f8f8;
+  color: #000;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -26,7 +27,7 @@ const ControlButton = styled.button`
   cursor: pointer;
 `;
 
-const AudioPlayer = ({src}: {src:string}) => {
+const AudioPlayer = ({src, title}: {src:string, title?:string}) => {
   const [isPlaying, setIsPlaying] = React.useState(false);
   const audioRef = React.useRef<HTMLAudioElement>(null);
 
@@ -58,7 +59,7 @@ const AudioPlayer = ({src}: {src:string}) => {
 
   return (
     <AudioPlayerWrapper>
-      <div>Áudio Player</div>
+      <div>{title}</div>
       <ControlsWrapper>
         <ControlButton onClick={skipBackward}>⏪</ControlButton>
         <ControlButton onClick={togglePlay}>{isPlaying ? '⏸️' : '▶️'}</ControlButton>

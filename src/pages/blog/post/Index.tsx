@@ -79,7 +79,7 @@ const Index = () => {
       }
       {post?.aud1 && (
         <Container>
-          <AudioPlayer src={post.aud1} />
+          <AudioPlayer src={post.aud1} title={post.titleAud1} />
         </Container>
       )
       }
