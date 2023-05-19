@@ -23,7 +23,7 @@ const Index = () => {
          title='Construindo um futuro brilhante através da educação.'
          href='/'
          btnLabel='Saiba Mais'
-         image='https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+         image='https://cdn.discordapp.com/attachments/1098057370728403115/1108935902748758046/IMG-20230517-WA0006.jpg'
       />
       <SectionContainer
       >

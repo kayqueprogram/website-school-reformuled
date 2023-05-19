@@ -73,30 +73,21 @@ const DiaD = () => {
         <Title>Vídeos</Title>
         <Videos />
         <Title>Àudios</Title>
-        {post?.aud1 && (
+        
           <Container>
-            <AudioPlayer src={post.aud1} title={post.titleAud1} />
+            <AudioPlayer src='https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/podcast001.aac?alt=media&token=9aa3b1b3-451d-42a5-b069-fe7eec935efc' title='"O você acha sobre o abandono de animais na região do pós-balsa?"' />
           </Container>
-        )
-        }
-        {post?.aud2 && (
           <Container>
-            <AudioPlayer src={post.aud2} title={post.titleAud2} />
+            <AudioPlayer src='https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/podcast1.mp4?alt=media&token=24cfb757-4a9c-4207-9cc9-f956888d2c88' title='Número de animais abandonados no pós-balsa vem aumentando nos últimos meses' />
           </Container>
-        )
-        }
-        {post?.aud3 && (
           <Container>
-            <AudioPlayer src={post.aud3} title={post.titleAud3} />
+            <AudioPlayer src='https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/podcast2.mp4?alt=media&token=c40dff6c-403d-48c0-9ead-902f9e4924f0' title='"Abandono dos Animais" --- com Maísa' />
           </Container>
-        )
-        }
-        {post?.aud4 && (
           <Container>
-            <AudioPlayer src={post.aud4} title={post.titleAud4} />
+            <AudioPlayer src='https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/podcast3.mp4?alt=media&token=186d630c-6aea-47c7-996b-3455094b6381' title='O que fazer para acabar com o abandono de animais no pós-balsa?
+' />
           </Container>
-        )
-        }
+ 
       </GalleryWrapper>
     </div>
   );
