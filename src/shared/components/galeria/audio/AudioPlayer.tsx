@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState , useRef} from 'react';
 import styled from 'styled-components';
 
 const AudioPlayerWrapper = styled.div`
@@ -28,22 +28,22 @@ const ControlButton = styled.button`
   cursor: pointer;
 `;
 
-const AudioPlayer = ({src, title}: {src:string, title?:string}) => {
-  const [isPlaying, setIsPlaying] = React.useState(false);
-  const audioRef = React.useRef<HTMLAudioElement>(null);
+const AudioPlayer = ({ src, title }: { src: string, title?: string }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   const togglePlay = () => {
-   const audio = audioRef.current;
+    const audio = audioRef.current;
     if (!audio) return;
 
     if (audio.paused) {
       audio.play();
       setIsPlaying(true);
-    }  else {
+    } else {
       audio.pause();
       setIsPlaying(false);
     }
-  
+
   };
 
   const skipBackward = () => {
