@@ -31,7 +31,7 @@ const routesConfig = [
     Component:<PageLayout><Post/></PageLayout>
   },
   {
-    path: '/about/:id',
+    path: '/about',
     state:'Sobre',
     Component:<PageLayout><About/></PageLayout>
   }
