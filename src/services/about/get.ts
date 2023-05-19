@@ -3,8 +3,8 @@ import { db } from 'services/firebase-config';
 
 
 async function getAbout() {
-    const postsCollectionRef = collection(db, "about");
-    const response = await getDocs(postsCollectionRef);
+    const aboutCollectionRef = collection(db, "about");
+    const response = await getDocs(aboutCollectionRef);
     const data = await response.docs?.map((doc) => ({ ...doc.data(), id: doc.id }))
     return data;
 }
