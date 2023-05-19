@@ -32,6 +32,7 @@ const routesConfig = [
   },
   {
     path: '/about',
+    state:'About',
     Component:<PageLayout><About/></PageLayout>
   }
 ];
