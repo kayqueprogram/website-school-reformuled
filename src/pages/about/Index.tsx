@@ -1,32 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import aboutApi from 'services/about';
-import { useParams } from 'react-router-dom';
+import React,{useState,useEffect} from 'react';
+import aboutApi from '../../services/about/index';
+import Banner from '../../shared/components/banner/Banner';
 
-interface AboutData {
-  title: string;
-  // adicione outras propriedades do objeto 'about' aqui
-}
-
-const About: React.FC = () => {
-  const [about, setAbout] = useState<AboutData | null>(null);
-  const { id } = useParams<{ id: string }>();
+const Index = () => {
+  const [about, setAbout] = React.useState<any>({});
 
   useEffect(() => {
-    const getAbout = async () => {
-      if (id) {
-        const data = await aboutApi.getAboutContent(id);
-        setAbout(data);
-      }
+    const getPost = async () => {
+      const data = await aboutApi.getAbout();
+      setAbout(data);
     };
 
-    getAbout();
-  }, [id]);
+    getPost();
+  }, []);
 
   return (
     <>
-      {about?.title && <div>{about.title}</div>}
+     <Banner
+      title={about?.title}
+     />
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default Index

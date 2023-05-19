@@ -1,13 +1,12 @@
 import { collection, doc, getDocs, getDoc } from 'firebase/firestore';
-import { db } from 'services/firebase-config';
+import { db } from '../firebase-config';
 
 
 async function getAbout() {
   try {
-    const postsCollectionRef = collection(db, 'about');
-    const response = await getDocs(postsCollectionRef);
-    const data = response.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-    return data;
+    const postRef = doc(db,'posts','Yb4n7VvmKN4fcUUaFKKZ');
+    const postDoc = await getDoc(postRef);
+    return postDoc.data()
   } catch (error) {
     console.error('Erro ao buscar :', error);
     return [];
