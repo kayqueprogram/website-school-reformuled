@@ -16,9 +16,11 @@ const Index = () => {
 
   return (
     <>
-     <Banner
+     {about?.title && (
+      <Banner
       title={about?.title}
      />
+     )}
     </>
   )
 }
