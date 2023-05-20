@@ -34,12 +34,12 @@ const Index = () => {
               {breakStr(about.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
       )}
-      {about?.content && (
+      {about?.content2 && (
           <Column gap='2.6rem'>
               {breakStr(about.content2)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
       )}
-      {about?.content && (
+      {about?.conclusion && (
           <Column gap='2.6rem'>
               {breakStr(about.conclusion)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
