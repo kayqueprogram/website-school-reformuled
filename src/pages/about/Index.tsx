@@ -23,12 +23,11 @@ const Index = () => {
 
   return (
     <>
-     {about?.title && (
       <Banner
       title={about?.title}
       image={about?.imgBanner}
      />
-     )}
+  
      <SectionContainer title={about?.title}>
       <Column gap='2.6rem'>
           {breakStr(about.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
