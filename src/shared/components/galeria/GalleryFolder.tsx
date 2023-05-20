@@ -18,6 +18,7 @@ const FolderWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  margin-right: 15px;
 `;
 
 const FolderIcon = styled.div`
