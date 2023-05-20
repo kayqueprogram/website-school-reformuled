@@ -15,6 +15,7 @@ const Index = () => {
     <div>
       <Banner
         image='https://cdn.discordapp.com/attachments/1098057370728403115/1108939866957434890/patio.webp'
+        title='Confira o nosso blog!'
       />
       <SectionContainer
        title='Não Perca Nossos Eventos'
