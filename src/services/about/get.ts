@@ -3,13 +3,13 @@ import { db } from '../firebase-config';
 
 
 async function getAbout() {
-  try {
-    const postRef = doc(db,'posts','Yb4n7VvmKN4fcUUaFKKZ');
+try {
+    const postRef = doc(db, 'posts', 'Yb4n7VvmKN4fcUUaFKKZ');
     const postDoc = await getDoc(postRef);
-    return postDoc.data()
+    return postDoc.data();
   } catch (error) {
-    console.error('Erro ao buscar :', error);
-    return [];
+    console.error('Erro ao buscar dados do documento:', error);
+    return null; // ou algum valor padrão adequado
   }
 }
 
@@ -22,6 +22,7 @@ async function getAboutContent(id: string) {
     if (postDoc.exists()) {
       // Documento encontrado, você pode acessar os dados usando postDoc.data()
       const data = postDoc.data();
+
       return data;
     } else {
       console.log('Documento não encontrado');
