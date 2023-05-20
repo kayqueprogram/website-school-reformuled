@@ -4,7 +4,7 @@ import { db } from '../firebase-config';
 
 async function getAbout() {
   try {
-    const postRef = doc(db,'posts','Yb4n7VvmKN4fcUUaFKKZ');
+    const postRef = doc(db,'about','Yb4n7VvmKN4fcUUaFKKZ');
     const postDoc = await getDoc(postRef);
     return postDoc.data()
   } catch (error) {

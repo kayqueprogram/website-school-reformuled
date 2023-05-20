@@ -1,18 +1,22 @@
 import React,{useState,useEffect} from 'react';
 import aboutApi from '../../services/about/index';
 import Banner from '../../shared/components/banner/Banner';
+import SectionContainer from 'shared/components/Section_Container/SectionContainer';
 
 const Index = () => {
-  const [about, setAbout] = React.useState<any>({});
+  const [about, setAbout] = useState<any>({});
 
   useEffect(() => {
     const getPost = async () => {
+      //lidar com erro aq
       const data = await aboutApi.getAbout();
-      setAbout(data);
+      setAbout(data)
     };
 
     getPost();
   }, []);
+
+  console.log(about)
 
   return (
     <>
@@ -21,6 +25,9 @@ const Index = () => {
       title={about?.title}
      />
      )}
+     <SectionContainer>
+      
+     </SectionContainer>
     </>
   )
 }
