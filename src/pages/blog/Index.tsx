@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <div>
       <Banner
-        image='https://s2.research.com/wp-content/uploads/2021/07/24113540/im_5_pes-1-1200x600.jpg'
+        image='https://cdn.discordapp.com/attachments/1098057370728403115/1108939866957434890/patio.webp'
       />
       <SectionContainer
        title='Não Perca Nossos Eventos'
@@ -28,7 +28,7 @@ const Index = () => {
         />
       </SectionContainer>
       <SectionContainer
-      title='Fique Ligado a todos nossos posts'
+      title='Fique Ligado a todos os nossos posts'
       >
         <DataFetcher
           fetchFunc={blogApi.getBlogPosts}
