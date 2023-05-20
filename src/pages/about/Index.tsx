@@ -27,23 +27,27 @@ const Index = () => {
       title={about?.title}
       image={about?.imgBanner}
      />
-  
+      <br/>
      <SectionContainer title={about?.title}>
       {about?.content && (
           <Column gap='2.6rem'>
               {breakStr(about.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
       )}
+      <br/>
       {about?.content2 && (
           <Column gap='2.6rem'>
               {breakStr(about.content2)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
       )}
+      <br/>
       {about?.conclusion && (
           <Column gap='2.6rem'>
               {breakStr(about.conclusion)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
+          
       )}
+      <br/>
      </SectionContainer>
     </>
   )

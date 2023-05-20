@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 interface FolderProps {
   title: string;
+  year: string;
 }
 
 const FolderWrapper = styled.div`
@@ -35,13 +36,13 @@ const FolderTitle = styled.h3`
   margin: 0;
 `;
 
-const Folder: React.FC<FolderProps> = ({ title }) => {
+const Folder: React.FC<FolderProps> = ({ title, year }) => {
   return (
     <FolderWrapper>
       <FolderIcon>
         <i className="fa fa-folder"></i>
       </FolderIcon>
-      <FolderTitle>{title}</FolderTitle>
+      <FolderTitle>{title} - <aside>{year}</aside></FolderTitle>
     </FolderWrapper>
   );
 };

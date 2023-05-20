@@ -5,6 +5,7 @@ import DiaD from 'pages/galeria/DiaD';
 import Blog from 'pages/blog/Index';
 import Post from 'pages/blog/post/Index';
 import About from 'pages/about/Index';
+import Barcadoinferno from 'pages/galeria/BarcadoInferno';
 
 const routesConfig = [
   {
@@ -20,6 +21,10 @@ const routesConfig = [
   {
     path: '/galeria/prjD',
     Component:<PageLayout><DiaD/></PageLayout>
+  },
+  {
+    path: '/galeria/barcaDoInferno',
+    Component:<PageLayout><Barcadoinferno/></PageLayout>
   },
   {
     path:'/blog',

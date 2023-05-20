@@ -21,7 +21,10 @@ const Galeria: React.FC = () => {
   return (
       <GalleryPageWrapper>
         <Link to='/galeria/prjD'>
-            <Folder title='Projeto dia D' />
+            <Folder title='Projeto dia D' year='2023'/>
+        </Link>
+        <Link to='/galeria/barcaDoInferno'>
+            <Folder title='A Barca do Inferno' year='2022' />
           </Link>
        </GalleryPageWrapper>
 
