@@ -34,6 +34,16 @@ const Index = () => {
               {breakStr(about.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
       )}
+      {about?.content && (
+          <Column gap='2.6rem'>
+              {breakStr(about.content2)?.map(cont => <Paragraph>{cont}</Paragraph>)}
+          </Column>
+      )}
+      {about?.content && (
+          <Column gap='2.6rem'>
+              {breakStr(about.conclusion)?.map(cont => <Paragraph>{cont}</Paragraph>)}
+          </Column>
+      )}
      </SectionContainer>
     </>
   )
