@@ -1,26 +1,40 @@
-import React,{useState,useEffect} from 'react';
-import aboutApi from '../../services/about/index';
-import Banner from '../../shared/components/banner/Banner';
+import React, { useState, useEffect } from 'react';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../services/firebase-config';
 
-const Index = () => {
-  const [about, setAbout] = React.useState<any>({});
+const About = () => {
+  const [aboutData, setAboutData] = useState<any>(null);
 
   useEffect(() => {
-    const getPost = async () => {
-      const data = await aboutApi.getAbout();
-      setAbout(data);
+    const fetchAboutData = async () => {
+      try {
+        const docRef = doc(db, 'about', 'Yb4n7VvmKN4fcUUaFKKZ');
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setAboutData(docSnap.data());
+        } else {
+          console.log('O documento não existe');
+        }
+      } catch (error) {
+        console.error('Erro ao buscar dados do Firebase:', error);
+      }
     };
 
-    getPost();
+    fetchAboutData();
   }, []);
 
   return (
-    <>
-     <Banner
-      title={about?.title}
-     />
-    </>
-  )
-}
+    <div>
+      {aboutData ? (
+        <>
+          <h2>{aboutData.title}</h2>
+          <p>{aboutData.description}</p>
+        </>
+      ) : (
+        <p>Carregando...</p>
+      )}
+    </div>
+  );
+};
 
-export default Index
+export default About;
