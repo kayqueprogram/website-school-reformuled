@@ -56,10 +56,10 @@ const Barcadoinferno = () => {
                     </ImageWrapper>
 
                 ))}
-                <Container>
+             
                     <Title>Vídeos</Title>
                     <VideoBarca />
-                </Container>
+             
 
 
             </GalleryWrapper>
