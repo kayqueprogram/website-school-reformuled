@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const VideoBarca = () => {
-  const videos = [    {      id: 1,      title: 'Peça teatral - A Barca do Inferno',      src: 'https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/teatro.mp4?alt=media&token=d484712f-f597-4921-b298-9d71b3568739',    }  ] 
+  const videos = [    {      id: 1,      title: 'Peça teatral - A Barca do Inferno',      src: 'https://firebasestorage.googleapis.com/v0/b/omardonatobassani-c3633.appspot.com/o/barca%20do%20inferno.mp4?alt=media&token=26016cd9-3e1f-432f-82db-0e42e19af268',    }  ] 
 
   return (
     <Container>
