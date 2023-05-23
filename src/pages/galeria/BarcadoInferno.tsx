@@ -6,6 +6,7 @@ import Title from 'shared/components/title/Title';
 import AudioPlayer from 'shared/components/galeria/audio/AudioPlayer';
 
 const GalleryWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

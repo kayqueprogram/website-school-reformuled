@@ -19,6 +19,7 @@ const VideoBarca = () => {
 };
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,8 +31,7 @@ const Video = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 400px;
-  width: 100%;
+  width: 80%;
   video {
     border-radius: 20px;
     width: 100%;
@@ -43,7 +43,7 @@ const Video = styled.div`
 const Title = styled.h1`
 display: block;
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
 `;
 
 export default VideoBarca;
