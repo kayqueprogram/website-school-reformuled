@@ -22,7 +22,7 @@ const Index = () => {
 
   console.log(about)
 
-  const videos = [{ id: 1, title: 'Memorial', src: 'https://www.youtube.com/embed/kKBZa2EvyUA', }]
+  const videos = [{ id: 1, title: 'Memorial', src: 'https://youtu.be/kKBZa2EvyUA', }]
 
   const Video = styled.div`
   margin: 1rem;
