@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Backward from 'assets/backward.svg'
+import Foward from 'assets/foward.svg'
 
 interface ImageCarouselProps {
   images: string[];
@@ -48,9 +50,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   return (
     <CarouselContainer>
-      <Button onClick={goToPreviousImage}>Esquerda</Button>
+      <Button onClick={goToPreviousImage}><Backward /></Button>
       <Image src={images[currentImageIndex]} alt="Imagem" />
-      <Button onClick={goToNextImage}>Direita</Button>
+      <Button onClick={goToNextImage}><Foward /></Button>
     </CarouselContainer>
   );
 };
