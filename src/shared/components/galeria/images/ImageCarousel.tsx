@@ -9,6 +9,7 @@ const CarouselContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 const Image = styled.img`
@@ -42,7 +43,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
     <CarouselContainer>
       <Button onClick={goToPreviousImage}>Esquerda</Button>
-      <Image src={images[currentImageIndex]} alt="Imagem" />
+      <Image src={images[currentImageIndex]} alt="Imagem da galeria" />
       <Button onClick={goToNextImage}>Direita</Button>
     </CarouselContainer>
   );
