@@ -11,7 +11,7 @@ const CarouselContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
  
 
