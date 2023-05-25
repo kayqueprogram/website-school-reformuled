@@ -13,7 +13,7 @@ const CarouselContainer = styled.div`
   justify-content: center;
   max-width: 800px;
   margin: 0 auto;
-  overflow: hidden;
+ 
 
   @media (max-width: 768px) {
     max-width: 100%;
