@@ -21,7 +21,7 @@ const CarouselContainer = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
 `;
 
