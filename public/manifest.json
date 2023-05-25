@@ -5,6 +5,7 @@
   "start_url": "/",
   "lang": "pt-BR",
   "theme_color": "rgb(1, 5, 33)",
+  "background_color": "#fff",
   "display": "standalone",
   "icons": [
     {
