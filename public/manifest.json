@@ -1,11 +1,14 @@
 {
-  "short_name": "E.E Omar Donato Bassani",
   "name": "Escola Estadual Omar Donato Bassani",
   "description": "Escola Estadual, fundada com o auxílio do antigo subprefeito Omar Donato...",
+  "short_name": "E.E Omar Donato Bassani",
+  "start_url": "/",
+  "lang": "pt-BR",
+  "theme_color": "rgb(1, 5, 33)",
+  "display": "standalone",
   "icons": [
     {
-      "src": "logo.png",
-      "sizes": "192x192",
+      "src": "logo",
       "type": "image/png"
     },
     {
@@ -20,8 +23,11 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "screenshots": [
+    {
+      "src": "preview.png",
+      "sizes": "2742x2370",
+      "type": "image/png"
+    }
+  ]
 }
