@@ -16,7 +16,7 @@ const CarouselContainer = styled.div`
  
 
   @media (max-width: 768px) {
-    max-width: 600;
+    max-width:  100%;
   }
 `;
 
