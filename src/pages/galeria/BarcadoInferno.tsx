@@ -12,7 +12,6 @@ const GalleryWrapper = styled.div`
   justify-content: space-between;
 
   margin: auto;
-  border-radius: 23px;
   background-color: ${({ theme }) => theme.colors.details.primary.dark};
   color: ${({ theme }) => theme.colors.text.secondary.light};
   padding: 20px;
