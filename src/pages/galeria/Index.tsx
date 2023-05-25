@@ -13,20 +13,23 @@ const GalleryPageWrapper = styled.div`
   align-items: center;
   height: 100vh;
   padding: 20px;
-  background-color: ${({theme})=> theme.colors.details.primary.dark};
+  background-color: ${({ theme }) => theme.colors.details.primary.dark};
 `;
 
 
 const Galeria: React.FC = () => {
   return (
-      <GalleryPageWrapper>
-        <Link to='/galeria/prjD'>
-            <Folder title='Projeto dia D' year='2023'/>
-        </Link>
-        <Link to='/galeria/barcaDoInferno'>
-            <Folder title='A Barca do Inferno' year='2022' />
-          </Link>
-       </GalleryPageWrapper>
+    <GalleryPageWrapper>
+      <Link to='/galeria/prjD'>
+        <Folder title='Projeto dia D' year='2023' />
+      </Link>
+      <Link to='/galeria/pinacoteca'>
+        <Folder title='Passeio á Pinacoteca' year='2023' />
+      </Link>
+      <Link to='/galeria/barcaDoInferno'>
+        <Folder title='A Barca do Inferno' year='2022' />
+      </Link>
+    </GalleryPageWrapper>
 
   );
 };

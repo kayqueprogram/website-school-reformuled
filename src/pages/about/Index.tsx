@@ -1,4 +1,5 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components'
 import aboutApi from '../../services/about/index';
 import Banner from '../../shared/components/banner/Banner';
 import SectionContainer from 'shared/components/Section_Container/SectionContainer';
@@ -21,34 +22,65 @@ const Index = () => {
 
   console.log(about)
 
+  const videos = [{ id: 1, title: 'Memorial', src: 'https://www.youtube.com/embed/kKBZa2EvyUA', }]
+
+  const Video = styled.div`
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  video {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+`;
+
+
+  const Title = styled.h1`
+display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+`;
+
   return (
     <>
       <Banner
-      title={about?.title}
-      image={about?.imgBanner}
-     />
-      <br/>
-     <SectionContainer title={about?.title}>
-      {about?.content && (
+        title={about?.title}
+        image={about?.imgBanner}
+      />
+      <br />
+      <SectionContainer title={about?.title}>
+        {about?.content && (
           <Column gap='2.6rem'>
-              {breakStr(about.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
+            {breakStr(about.content)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
-      )}
-      <br/>
-      {about?.content2 && (
+        )}
+        <br />
+        {about?.content2 && (
           <Column gap='2.6rem'>
-              {breakStr(about.content2)?.map(cont => <Paragraph>{cont}</Paragraph>)}
+            {breakStr(about.content2)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
-      )}
-      <br/>
-      {about?.conclusion && (
+        )}
+        <br />
+        {about?.conclusion && (
           <Column gap='2.6rem'>
-              {breakStr(about.conclusion)?.map(cont => <Paragraph>{cont}</Paragraph>)}
+            {breakStr(about.conclusion)?.map(cont => <Paragraph>{cont}</Paragraph>)}
           </Column>
-          
-      )}
-      <br/>
-     </SectionContainer>
+
+        )}
+        {videos.map((video) => (
+          <Video key={video.id}>
+            <video controls>
+              <source src={video.src} type="video/mp4" />
+            </video>
+            <Title>{video.title}</Title>
+          </Video>
+        ))}
+        <br />
+
+      </SectionContainer>
     </>
   )
 }
