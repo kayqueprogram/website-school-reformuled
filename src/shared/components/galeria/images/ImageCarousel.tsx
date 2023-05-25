@@ -50,9 +50,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   return (
     <CarouselContainer>
-      <Button onClick={goToPreviousImage}>&lt;&lt;&lt;--</Button>
+      <Button onClick={goToPreviousImage}>&lt;&lt;&lt;</Button>
       <Image src={images[currentImageIndex]} alt="Imagem" />
-      <Button onClick={goToNextImage}>--&gt;&gt;&gt;</Button>
+      <Button onClick={goToNextImage}>&gt;&gt;&gt;</Button>
     </CarouselContainer>
   );
 };
