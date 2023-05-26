@@ -101,6 +101,13 @@ const Index = () => {
         </Container>
       )
       }
+      {
+        post?.contributions.map((contribution: string) => <Container>
+          <ul>
+            <li>{contribution}</li>
+          </ul>
+        </Container>)
+      }
     </>
   )
 }
