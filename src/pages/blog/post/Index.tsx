@@ -105,30 +105,30 @@ const Index = () => {
         <SectionContainer title={post.postContributions}>
           {
             post?.contribution1 && (
-              <Column>
+              <Container>
                 <Paragraph><a href={post.linkCredit1} target="_blank" rel="noopener noreferrer">{post.contribution1}</a></Paragraph>
-              </Column>
+              </Container>
             )
           }
           {
             post?.contribution2 && (
-              <Column>
+              <Container>
                 <Paragraph>{post.contribution2}</Paragraph>
-              </Column>
+              </Container>
             )
           }
           {
             post?.contribution3 && (
-              <Column>
+              <Container>
                 <Paragraph>{post.contribution3}</Paragraph>
-              </Column>
+              </Container>
             )
           }
           {
             post?.contribution4 && (
-              <Column>
+              <Container>
                 <Paragraph>{post.contribution4}</Paragraph>
-              </Column>
+              </Container>
             )
           }
         </SectionContainer>
@@ -155,10 +155,12 @@ const Container = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+align-items: center;
+text-align: center;
 
 margin: auto;
 border-radius: 23px;
-color: ${({ theme }) => theme.colors.text.secondary.light};
+color: ${({ theme }) => theme.colors.text.secondary.dark};
 padding: 20px;
 padding-top: 100px;
 `
