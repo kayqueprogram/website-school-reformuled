@@ -1,37 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Folder from '../../shared/components/galeria/GalleryFolder';
-import DiaD from './DiaD';
-import StyledNavLink from 'shared/components/styled_nav_link/StyledNavLink';
 import { Link } from 'react-router-dom';
-
+import SectionContainer from 'shared/components/Section_Container/SectionContainer';
+import galleryApi from 'services/gallery';
+import pageTheme from 'shared/styles/pageTheme';
 
 const GalleryPageWrapper = styled.div`
+  min-height: 60vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 20px;
-  background-color: ${({ theme }) => theme.colors.details.primary.dark};
 `;
 
 
-const Galeria: React.FC = () => {
-  return (
-    <GalleryPageWrapper>
-      <Link to='/galeria/prjD'>
-        <Folder title='Projeto dia D' year='2023' />
-      </Link>
-      <Link to='/galeria/pinacoteca'>
-        <Folder title='Passeio á Pinacoteca' year='2023' />
-      </Link>
-      <Link to='/galeria/barcaDoInferno'>
-        <Folder title='A Barca do Inferno' year='2022' />
-      </Link>
-    </GalleryPageWrapper>
+const Galeria = () => {
+  const [galleries,setGalleries] = useState<any[]>([]);
 
+  useEffect(()=>{
+    const getGalleries = async() =>{
+       const data = await galleryApi.getGalleryCollections();
+       data && setGalleries(data)
+    }
+
+    getGalleries()
+  },[])
+
+  console.log(galleries)
+
+  return ( 
+   <SectionContainer
+    backgroundColor={pageTheme.colors.details.primary.dark}
+    color={pageTheme.colors.text.secondary.light}
+   >
+     <GalleryPageWrapper>
+      {
+        galleries.map(gallery => (
+          <Link to={`/galeria/${gallery.id}`}>
+            <Folder {...gallery}/>
+          </Link>
+        ))
+      }
+     </GalleryPageWrapper>     
+   </SectionContainer>
   );
 };
 
 export default Galeria;
+
+
+
+
+

@@ -1,12 +1,10 @@
 import PageLayout from 'shared/layout/PageLayout';
 import Home from 'pages/home/Index';
-import Galeria from 'pages/galeria/Index';
-import DiaD from 'pages/galeria/DiaD';
 import Blog from 'pages/blog/Index';
 import Post from 'pages/blog/post/Index';
 import About from 'pages/about/Index';
-import Barcadoinferno from 'pages/galeria/BarcadoInferno';
-import Pinacoteca from 'pages/galeria/Pinacoteca';
+import GalleryPage from 'pages/galeria/Index';
+import Gallery from 'pages/galeria/project/Index';
 
 const routesConfig = [
   {
@@ -17,21 +15,12 @@ const routesConfig = [
   {
     path: '/galeria',
     state: 'Galeria',
-    Component:<PageLayout><Galeria/></PageLayout>
+    Component:<PageLayout><GalleryPage/></PageLayout>
   },
   {
-    path: '/galeria/prjD',
-    Component:<PageLayout><DiaD/></PageLayout>
-  },
-  {
-    path: '/galeria/barcaDoInferno',
-    Component:<PageLayout><Barcadoinferno/></PageLayout>
-  },
-  {
-    path: '/galeria/pinacoteca',
-    Component:<PageLayout><Pinacoteca/></PageLayout>
-  },
-  {
+    path: '/galeria/:galleryId',
+    Component:<PageLayout><Gallery/></PageLayout>
+  },{
     path:'/blog',
     state:'Blog',
     Component:<PageLayout><Blog/></PageLayout>

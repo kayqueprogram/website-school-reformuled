@@ -1,5 +1,5 @@
 import React from 'react';
-import SwiperCore,{Navigation} from 'swiper';
+import SwiperCore,{Navigation,Pagination} from 'swiper';
 import {Swiper} from 'swiper/react';
 import styled from 'styled-components';
 import { device } from 'shared/styles/breakPoints';
@@ -13,7 +13,7 @@ type TSwiperProps = {
 }
   
 const Slide = ({children,slideConfig}:TSwiperProps) => {
-  SwiperCore.use([Navigation]);
+  SwiperCore.use([Navigation,Pagination]);
 
   return (
    <Container>
@@ -41,6 +41,22 @@ const Container = styled.div`
  .swiper-slide {
   width: 100%;
   height: auto;
+ }
+
+ .swiper-button-prev,
+ .swiper-button-next{
+  color: ${({theme})=>theme.colors.details.secondary.dark};
+
+ }
+
+ .swiper-button-prev::after,
+ .swiper-button-next::after{
+  font-size: 6rem;
+ }
+
+ .swiper-pagination{
+  padding: 10px 0px;
+  font-size: 20px;
  }
 
  @media ${device.md}{

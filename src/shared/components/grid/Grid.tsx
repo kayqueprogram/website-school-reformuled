@@ -17,7 +17,7 @@ const Container = styled.div`
  width: 100%;
  display: grid;
  gap: 0.6rem;
- grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+ grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
 `;
 
 export default Grid

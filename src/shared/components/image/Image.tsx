@@ -20,6 +20,7 @@ const Container = styled.img<TProps>`
   max-height: ${({maxHeight})=>maxHeight || 'none'};
   height: ${({height})=> height || 'auto'};
   object-fit: cover;
+  object-position: center;
 `;
 
 export default Image

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface FolderProps {
-  title: string;
+  name: string;
   year: string;
 }
 
@@ -35,15 +35,16 @@ const FolderIcon = styled.div`
 const FolderTitle = styled.h3`
   font-size: 16px;
   margin: 0;
+  color: ${({theme})=>theme.colors.text.secondary.dark};
 `;
 
-const Folder: React.FC<FolderProps> = ({ title, year }) => {
+const Folder: React.FC<FolderProps> = ({ name, year }) => {
   return (
     <FolderWrapper>
       <FolderIcon>
         <i className="fa fa-folder"></i>
       </FolderIcon>
-      <FolderTitle>{title} - <aside>{year}</aside></FolderTitle>
+      <FolderTitle>{name} - <aside>{year}</aside></FolderTitle>
     </FolderWrapper>
   );
 };
