@@ -102,10 +102,32 @@ const Index = () => {
       )
       }
       {
-        post?.contributions.map(contribution => <Container>
-  
-        <Paragraph>{contribution}</Paragraph>
-        </Container>)
+        post?.contribution1 && (
+          <Container>
+            <Paragraph>{post.contribution1}</Paragraph>
+          </Container>
+        )
+      }
+      {
+        post?.contribution2 && (
+          <Container>
+            <Paragraph>{post.contribution2}</Paragraph>
+          </Container>
+        )
+      }
+      {
+        post?.contribution3 && (
+          <Container>
+            <Paragraph>{post.contribution3}</Paragraph>
+          </Container>
+        )
+      }
+      {
+        post?.contribution4 && (
+          <Container>
+            <Paragraph>{post.contribution4}</Paragraph>
+          </Container>
+        )
       }
     </>
   )
