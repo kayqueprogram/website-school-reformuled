@@ -101,34 +101,38 @@ const Index = () => {
         </Container>
       )
       }
-      {
-        post?.contribution1 && (
-          <Container>
-            <Paragraph>{post.contribution1}</Paragraph>
-          </Container>
-        )
-      }
-      {
-        post?.contribution2 && (
-          <Container>
-            <Paragraph>{post.contribution2}</Paragraph>
-          </Container>
-        )
-      }
-      {
-        post?.contribution3 && (
-          <Container>
-            <Paragraph>{post.contribution3}</Paragraph>
-          </Container>
-        )
-      }
-      {
-        post?.contribution4 && (
-          <Container>
-            <Paragraph>{post.contribution4}</Paragraph>
-          </Container>
-        )
-      }
+      {post?.postContributions && (
+        <SectionContainer title={post.postContributions}>
+          {
+            post?.contribution1 && (
+              <Container>
+                <Paragraph><a href={post.linkCredit1} target="_blank" rel="noopener noreferrer">{post.contribution1}</a></Paragraph>
+              </Container>
+            )
+          }
+          {
+            post?.contribution2 && (
+              <Container>
+                <Paragraph>{post.contribution2}</Paragraph>
+              </Container>
+            )
+          }
+          {
+            post?.contribution3 && (
+              <Container>
+                <Paragraph>{post.contribution3}</Paragraph>
+              </Container>
+            )
+          }
+          {
+            post?.contribution4 && (
+              <Container>
+                <Paragraph>{post.contribution4}</Paragraph>
+              </Container>
+            )
+          }
+        </SectionContainer>
+      )}
     </>
   )
 }
