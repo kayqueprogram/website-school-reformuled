@@ -105,30 +105,30 @@ const Index = () => {
         <SectionContainer title={post.postContributions}>
           {
             post?.contribution1 && (
-              <Container>
+              <Column>
                 <Paragraph><a href={post.linkCredit1} target="_blank" rel="noopener noreferrer">{post.contribution1}</a></Paragraph>
-              </Container>
+              </Column>
             )
           }
           {
             post?.contribution2 && (
-              <Container>
+              <Column>
                 <Paragraph>{post.contribution2}</Paragraph>
-              </Container>
+              </Column>
             )
           }
           {
             post?.contribution3 && (
-              <Container>
+              <Column>
                 <Paragraph>{post.contribution3}</Paragraph>
-              </Container>
+              </Column>
             )
           }
           {
             post?.contribution4 && (
-              <Container>
+              <Column>
                 <Paragraph>{post.contribution4}</Paragraph>
-              </Container>
+              </Column>
             )
           }
         </SectionContainer>
