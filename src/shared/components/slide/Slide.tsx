@@ -45,7 +45,7 @@ const Container = styled.div`
 
  .swiper-button-prev,
  .swiper-button-next{
-  color: ${({theme})=>theme.colors.details.primary.dark};
+  color: ${({theme})=>theme.colors.details.secondary.dark};
 
  }
 
