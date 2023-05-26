@@ -7,6 +7,8 @@ type Props = {
   justifyContent?:string;
   alignItems?:'stretch'|'flex-start'|'flex-end'|'baseline'|'center';
   gap?:string;
+  color?:string;
+  textDecoration?:string;
 }
 
 const Column = ({children,...styleProps}:Props) => {
@@ -23,7 +25,11 @@ const Container = styled.div<Omit<Props,'children'>>`
   flex-direction: column;
   justify-content: ${({justifyContent})=> justifyContent || 'start' };
   align-items:${({alignItems})=>alignItems || 'flex-start'};
-  color: currentColor;
+  color: ${({color})=> color || 'currentColor'};
+  
+  &:hover {
+    text-decoration: ${({textDecoration})=> textDecoration || 'none' };
+  }
 
   &>*:not(:first-child){
     margin-top:${({gap})=>gap || '1rem'};
