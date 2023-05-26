@@ -102,10 +102,9 @@ const Index = () => {
       )
       }
       {
-        post?.contributions.map((contribution: string) => <Container>
-          <ul>
-            <li>{contribution}</li>
-          </ul>
+        post?.contributions.map(contribution => <Container>
+  
+        <Paragraph>{contribution}</Paragraph>
         </Container>)
       }
     </>
