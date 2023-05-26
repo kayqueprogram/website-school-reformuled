@@ -17,7 +17,7 @@ const slideImgConfig = {
     navigation:true,
     breakpoints: {
       1024:{
-        slidesPerView:2
+        slidesPerView:1
       },
       600:{
         slidesPerView:1
