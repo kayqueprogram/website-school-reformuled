@@ -102,7 +102,7 @@ const Index = () => {
       )
       }
       {post?.postContributions && (
-        <SectionContainer title={post.postContributions}>
+        <SectionContainer title={post.postContributions} isRelative={true}>
           {
             post?.contribution1 && (
               <Column textDecoration='underline'color='#00e0ff'justifyContent='center' alignItems='center'>
