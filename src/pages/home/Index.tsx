@@ -22,7 +22,7 @@ const Index = () => {
     <>
       <Banner
          title='Construindo um futuro brilhante através da educação.'
-         href='/'
+         href='/about'
          btnLabel='Saiba Mais'
          image='https://cdn.discordapp.com/attachments/1048588250421411861/1109255175069241485/teatro.jpg'
       />
@@ -76,7 +76,7 @@ const Index = () => {
               <Paragraph>
               Oferecemos um programa acadêmico abrangente e rigoroso que prepara os alunos para o sucesso na faculdade e além. Nosso currículo é projetado para desafiar os alunos, fornecendo-lhes as habilidades e conhecimentos de que precisam para se destacar em um mundo de grandes transformações.
               </Paragraph>
-              <StylizedButton>Sobre Nós</StylizedButton>
+              <StylizedButton><Link to="/about">Sobre Nós</Link></StylizedButton>
               <StylizedButton><Link to='/blog'>Leia Nosso Blog</Link></StylizedButton>
           </Column>
         </RowToColumn>
