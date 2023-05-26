@@ -8,6 +8,7 @@ import pageTheme from 'shared/styles/pageTheme';
 
 const GalleryPageWrapper = styled.div`
   min-height: 60vh;
+  gap: 14px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
