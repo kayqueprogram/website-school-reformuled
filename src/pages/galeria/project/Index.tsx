@@ -123,7 +123,7 @@ const GalleryImage = styled.img`
 
 const GalleryVideo = styled.video`
   width: 100%;
-  height: 80rem;
+  height: 50rem;
 `;
 
 const AudiosField = styled.div`
