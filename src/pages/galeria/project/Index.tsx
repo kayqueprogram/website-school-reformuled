@@ -112,7 +112,7 @@ const Teste = () => {
 
 const GalleryImage = styled.img`
   width: 100%;
-  height: 70rem;
+  height: 60rem;
   object-fit: cover;
 
   @media ${device.md} {
