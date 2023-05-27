@@ -29,6 +29,10 @@ const Container = styled(NavLink)`
   &.active {
     border-color: ${({theme})=>theme.colors.details.secondary.dark};
   }
+
+  &:hover {
+    border-color: ${({theme})=>theme.colors.details.secondary.dark};
+  }
 `;
 
 export default StyledNavLink
