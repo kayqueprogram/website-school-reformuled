@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
    html{
-    font-size: 62.5%;
+    font-size: 64.5%;
    }
 
     body {
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
         }
 
         @media ${device.sm} {
-            font-size: 48%;
+            font-size: 40%;
         }
     }
 `;
