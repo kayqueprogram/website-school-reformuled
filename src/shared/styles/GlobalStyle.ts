@@ -25,11 +25,11 @@ const GlobalStyle = createGlobalStyle`
 
     html{
         @media ${device.md} {
-            font-size:48%;
+            font-size:50%;
         }
 
         @media ${device.sm} {
-            font-size: 34%;
+            font-size: 48%;
         }
     }
 `;
