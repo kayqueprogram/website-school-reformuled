@@ -10,11 +10,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
    html{
-    font-size: 64.5%;
+    font-size: 62.1%;
    }
 
     body {
-       font-size: 1.6rem;
+       font-size: 1.5rem;
        background-color:rgb(223 223 223);
     }
 
@@ -25,11 +25,11 @@ const GlobalStyle = createGlobalStyle`
 
     html{
         @media ${device.md} {
-            font-size:50%;
+            font-size: 50%;
         }
 
         @media ${device.sm} {
-            font-size: 40%;
+            font-size: 42%;
         }
     }
 `;

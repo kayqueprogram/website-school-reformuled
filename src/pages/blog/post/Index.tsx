@@ -105,7 +105,7 @@ const Index = () => {
         <SectionContainer title={post.postContributions} isRelative={true}>
           {
             post?.contribution1 && (
-              <Column textDecoration='underline'color='#00e0ff'justifyContent='center' alignItems='center'>
+              <Column textDecoration='underline'color='#F00'justifyContent='center' alignItems='center'>
                 <Paragraph><a href={post.linkCredit1} target="_blank" rel="noopener noreferrer">{post.contribution1}</a></Paragraph>
               </Column>
             )
