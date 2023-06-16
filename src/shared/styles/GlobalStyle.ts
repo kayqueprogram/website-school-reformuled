@@ -34,4 +34,4 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export default GlobalStyle;j4
+export default GlobalStyle;
