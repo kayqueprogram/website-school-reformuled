@@ -18,13 +18,7 @@ const Footer = () => {
               <span>Queremos o melhor para você</span>
            </Column>
            <Column>
-              <Span textTransform='uppercase' fontWeight='bold'>
-                CONTACT US
-              </Span>
-              <Span>
-                coordenacaobassani2022@gmail.com
-              </Span>
-              <Span> +55 11 4354-7192</Span>
+              
            </Column>
            <Column>
              {
