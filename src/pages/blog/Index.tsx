@@ -18,7 +18,7 @@ const Index = () => {
         title='Confira o nosso blog!'
       />
       <SectionContainer
-       title='Não Perca os Eventos da E.E Omar Donato Bassani'
+       title='Não Perca os Eventos da E.E Omar Donato Bassani!'
        backgroundColor={pageTheme.colors.details.primary.dark}
        color={pageTheme.colors.text.secondary.light}
       >
