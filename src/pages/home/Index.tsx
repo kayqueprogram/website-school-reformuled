@@ -37,7 +37,7 @@ const Index = () => {
               <Paragraph>
              Bem-vindo à Escola Omar Donato Bassani, um lugar onde os alunos prosperam academicamente, pessoalmente e socialmente. Nossa escola se dedica a fornecer um ambiente inclusivo e de apoio que capacita os alunos a perseguir seus projetos e alcançar seus objetivos.
               </Paragraph>
-              <StylizedButton>Sobre Nós</StylizedButton>
+              <StylizedButton><Link to='/about'>Sobre nós</Link></StylizedButton>
               <StylizedButton><Link to='/blog'>Leia Nosso Blog</Link></StylizedButton>
           </Column>
         </RowToColumn>
