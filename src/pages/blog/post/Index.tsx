@@ -24,15 +24,10 @@ const Index = () => {
     getPost();
   }, [id]);
 
-
-  const ImageContainer = styled.div`
-  margin: 20px 0;
-  text-align: center;
-`;
-
 const Image = styled.img`
   max-width: 100%;
   height: auto;
+  margin: 20px 0;
 `;
 
 
@@ -46,23 +41,16 @@ const Image = styled.img`
       <SectionContainer
         title={post?.title}
       >
- {
-  post?.content && (
-    <Column gap='2.6rem'>
-      {breakStr(post.content)?.map((cont, index) => (
-        <React.Fragment key={index}>
-          <Paragraph>{cont}</Paragraph>
-          {(index + 1) % 3 === 0 && index / 3 < post.images.length && (
-            <ImageContainer>
-              <Image src={post.images[index / 3]} alt="post image" />
-            </ImageContainer>
-          )}
-        </React.Fragment>
-      ))}
-    </Column>
-  )
-}
-
+     {post?.content && (
+        <Column gap='2.6rem'>
+          {breakStr(post.content)?.map((cont, index) => (
+            <React.Fragment key={index}>
+              <Paragraph>{cont}</Paragraph>
+              {index === 2 && post.image && <Image src={post.image} alt="Descrição da imagem" />}
+            </React.Fragment>
+          ))}
+        </Column>
+      )}
       </SectionContainer>
       {
         post?.vid1 && (
