@@ -52,7 +52,7 @@ const Image = styled.img`
       {breakStr(post.content)?.map((cont, index) => (
         <React.Fragment key={index}>
           <Paragraph>{cont}</Paragraph>
-          {(index + 1) % 3 === 0 && post.images && index / 3 < post.images.length && (
+          {(index + 1) % 3 === 0 && index / 3 < post.images.length && (
             <ImageContainer>
               <Image src={post.images[index / 3]} alt="post image" />
             </ImageContainer>
