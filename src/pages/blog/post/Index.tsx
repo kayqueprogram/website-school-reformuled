@@ -46,7 +46,7 @@ const Image = styled.img`
           {breakStr(post.content)?.map((cont, index) => (
             <React.Fragment key={index}>
               <Paragraph>{cont}</Paragraph>
-              {index === 2 && post.image && <Image src={post.image} alt="Descrição da imagem" />}
+              {index === 2 && post.imageContent && <Image src={post.imageContent} alt="Descrição da imagem" />}
             </React.Fragment>
           ))}
         </Column>
