@@ -9,10 +9,15 @@ import EventCard from 'shared/components/event_card/EventCard';
 import CardsSlide from 'shared/components/cards_slide/CardsSlide';
 import eventsApi from 'services/events';
 import pageTheme from 'shared/styles/pageTheme';
+import Helmet from 'react-helmet'
 
 const Index = () => {
   return (
     <div>
+      <Helmet>
+        <title>Blog - E. E. Omar Donato Bassani</title>
+        <meta name="description" content="Confira os posts e eventos de nossa escola!"/>.
+      </Helmet>
       <Banner
         image='https://cdn.discordapp.com/attachments/1098057370728403115/1108939866957434890/patio.webp'
         title='Confira o nosso blog!'

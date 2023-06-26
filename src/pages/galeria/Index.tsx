@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import SectionContainer from 'shared/components/Section_Container/SectionContainer';
 import galleryApi from 'services/gallery';
 import pageTheme from 'shared/styles/pageTheme';
+import Helmet from 'react-helmet'
 
 const GalleryPageWrapper = styled.div`
   min-height: 60vh;
@@ -18,34 +19,41 @@ const GalleryPageWrapper = styled.div`
 
 
 const Galeria = () => {
-  const [galleries,setGalleries] = useState<any[]>([]);
+  const [galleries, setGalleries] = useState<any[]>([]);
 
-  useEffect(()=>{
-    const getGalleries = async() =>{
-       const data = await galleryApi.getGalleryCollections();
-       data && setGalleries(data)
+  useEffect(() => {
+    const getGalleries = async () => {
+      const data = await galleryApi.getGalleryCollections();
+      data && setGalleries(data)
     }
 
     getGalleries()
-  },[])
+  }, [])
 
   console.log(galleries)
 
-  return ( 
-   <SectionContainer
-    backgroundColor={pageTheme.colors.details.primary.dark}
-    color={pageTheme.colors.text.secondary.light}
-   >
-     <GalleryPageWrapper>
-      {
-        galleries.map(gallery => (
-          <Link to={`/galeria/${gallery.id}`}>
-            <Folder {...gallery}/>
-          </Link>
-        ))
-      }
-     </GalleryPageWrapper>     
-   </SectionContainer>
+  return (
+
+    <>
+      <Helmet>
+        <title>Galeria - E. E. Omar Donato Bassani</title>
+        <meta name="description" content="Galeria exibindo projetos, peças e eventos realizados na E. E. Omar.."/>.
+      </Helmet>
+      <SectionContainer
+        backgroundColor={pageTheme.colors.details.primary.dark}
+        color={pageTheme.colors.text.secondary.light}
+      >
+        <GalleryPageWrapper>
+          {
+            galleries.map(gallery => (
+              <Link to={`/galeria/${gallery.id}`}>
+                <Folder {...gallery} />
+              </Link>
+            ))
+          }
+        </GalleryPageWrapper>
+      </SectionContainer>
+    </>
   );
 };
 

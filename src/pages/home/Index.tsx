@@ -15,11 +15,17 @@ import Title from 'shared/components/title/Title';
 import Paragraph from 'shared/components/paragraph/Paragraph';
 import StylizedButton from 'shared/components/stylized_button/StylizedButton';
 import Image from 'shared/components/image/Image';
+import Helmet from 'react-helmet'
+
 
 
 const Index = () => {
   return (
     <>
+      <Helmet>
+        <title>Home - E. E. Omar Donato Bassani</title>
+        <meta name="description" content="Escola Estadual, fundada com o auxílio do antigo subprefeito Omar Donato Bassani...."/>
+      </Helmet>
       <Banner
          title='Construindo um futuro brilhante através da educação.'
          href='/about'

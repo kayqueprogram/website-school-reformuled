@@ -6,6 +6,7 @@ import SectionContainer from 'shared/components/Section_Container/SectionContain
 import Column from 'shared/components/column/Column';
 import Paragraph from 'shared/components/paragraph/Paragraph';
 import { breakStr } from 'shared/utils/breakStr';
+import Helmet from 'react-helmet'
 
 const Index = () => {
   const [about, setAbout] = useState<any>({});
@@ -46,6 +47,10 @@ display: block;
 
   return (
     <>
+      <Helmet>
+        <title>Sobre - E. E. Omar Donato Bassani</title>
+        <meta name="description" content="Saiba mais sobre a história de nossa escola!"/>.
+      </Helmet>
       <Banner
         title={about?.title}
         image={about?.imgBanner}
