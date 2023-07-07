@@ -29,6 +29,21 @@
       "src": "preview.png",
       "sizes": "2742x2370",
       "type": "image/png"
+    },
+    {
+      "src": "https://cdn.discordapp.com/attachments/1098057370728403115/1109624882809032734/20220803_080749.jpg",
+      "sizes": "2742x2370",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.discordapp.com/attachments/1098057370728403115/1119939102909943838/WhatsApp_Image_2023-06-14_at_16.26.24_2.jpeg",
+      "sizes": "2742x2370",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.discordapp.com/attachments/1098057370728403115/1111766462147854478/IMG-20230522-WA0017.jpg",
+      "sizes": "2742x2370",
+      "type": "image/png"
     }
   ]
 }
