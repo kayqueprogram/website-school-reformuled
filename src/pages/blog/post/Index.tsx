@@ -7,6 +7,7 @@ import SectionContainer from 'shared/components/Section_Container/SectionContain
 import Column from 'shared/components/column/Column';
 import { breakStr } from 'shared/utils/breakStr';
 import Paragraph from 'shared/components/paragraph/Paragraph';
+import Helmet from 'react-helmet';
 import AudioPlayer from 'shared/components/galeria/audio/AudioPlayer';
 
 const Index = () => {
@@ -24,7 +25,7 @@ const Index = () => {
     getPost();
   }, [id]);
 
-const Image = styled.img`
+  const Image = styled.img`
   max-width: 100%;
   height: auto;
   margin: 20px 0;
@@ -34,6 +35,13 @@ const Image = styled.img`
 
   return (
     <>
+      {post?.title && (
+        <Helmet>
+
+          <title>Blog - {post?.title}</title>
+
+        </Helmet>
+      )}
       <Banner
         title={post?.title}
         image={post?.image}
@@ -41,16 +49,16 @@ const Image = styled.img`
       <SectionContainer
         title={post?.title}
       >
-     {post?.content && (
-        <Column gap='2.6rem'>
-          {breakStr(post.content)?.map((cont, index) => (
-            <React.Fragment key={index}>
-              <Paragraph>{cont}</Paragraph>
-              {index === 2 && post.imageContent && <Image src={post.imageContent} alt="Descrição da imagem" />}
-            </React.Fragment>
-          ))}
-        </Column>
-      )}
+        {post?.content && (
+          <Column gap='2.6rem'>
+            {breakStr(post.content)?.map((cont, index) => (
+              <React.Fragment key={index}>
+                <Paragraph>{cont}</Paragraph>
+                {index === 2 && post.imageContent && <Image src={post.imageContent} alt="Descrição da imagem" />}
+              </React.Fragment>
+            ))}
+          </Column>
+        )}
       </SectionContainer>
       {
         post?.vid1 && (
@@ -114,7 +122,7 @@ const Image = styled.img`
         <SectionContainer title={post.postContributions} isRelative={true}>
           {
             post?.contribution1 && (
-              <Column textDecoration='underline'color='#F00'justifyContent='center' alignItems='center'>
+              <Column textDecoration='underline' color='#F00' justifyContent='center' alignItems='center'>
                 <Paragraph><a href={post.linkCredit1} target="_blank" rel="noopener noreferrer">{post.contribution1}</a></Paragraph>
               </Column>
             )
@@ -142,6 +150,11 @@ const Image = styled.img`
           }
         </SectionContainer>
       )}
+      {post?.font && (
+        <Column justifyContent='center' alignItems='center'>
+          <Paragraph>{post.font}</Paragraph>
+        </Column>
+      ) }
     </>
   )
 }
