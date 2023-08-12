@@ -62,7 +62,7 @@ const Index = () => {
         )}
         {post?.font && (
           
-            <Paragraph>{post.font}</Paragraph>
+            <Paragraph><a href={post.font}>{post.fontName}</a></Paragraph>
       
         )}
       </SectionContainer>
