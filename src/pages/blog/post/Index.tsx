@@ -58,6 +58,12 @@ const Index = () => {
               </React.Fragment>
             ))}
           </Column>
+
+        )}
+        {post?.font && (
+          <Column justifyContent='center' alignItems='center'>
+            <Paragraph>{post.font}</Paragraph>
+          </Column>
         )}
       </SectionContainer>
       {
@@ -148,11 +154,7 @@ const Index = () => {
               </Column>
             )
           }
-          {post?.font && (
-            <Column justifyContent='center' alignItems='center'>
-              <Paragraph>{post.font}</Paragraph>
-            </Column>
-          )}
+
         </SectionContainer>
       )}
 
