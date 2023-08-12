@@ -61,9 +61,9 @@ const Index = () => {
 
         )}
         {post?.font && (
-          <Column justifyContent='center' alignItems='center'>
+          
             <Paragraph>{post.font}</Paragraph>
-          </Column>
+      
         )}
       </SectionContainer>
       {
