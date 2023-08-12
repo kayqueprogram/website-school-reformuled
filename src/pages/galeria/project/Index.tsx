@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import { device } from 'shared/styles/breakPoints';
 import Grid from 'shared/components/grid/Grid';
 import AudioPlayer from 'shared/components/galeria/audio/AudioPlayer';
+import Helmet from 'react-helmet';
 
 const slideImgConfig = {
     navigation:true,
@@ -59,6 +60,13 @@ const Teste = () => {
      backgroundColor={pageTheme.colors.details.primary.dark}
      color={pageTheme.colors.text.secondary.light}
     >
+      {galleryData?.name && (
+        <Helmet>
+
+        <title>Galeria - {galleryData.name}</title>
+        
+        </Helmet>
+      )}
       <div>
         <Row padding='8rem 0rem 0rem 0rem' alignItems='center'>
           {galleryData?.name && <Title>{galleryData.name}</Title>}
