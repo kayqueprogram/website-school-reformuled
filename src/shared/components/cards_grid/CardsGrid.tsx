@@ -39,7 +39,7 @@ const CardsGrid = ({ CardComponent, data }: TProps) => {
             nextLabel={<pageIcons.ArrowRight />}
             pageCount={pageCount}
             onPageChange={changePage} // Corrected onPageChange handler
-            forcePage={pageNumber} // Add this line to reflect the current page in ReactPaginate
+            forcePage={pageNumber === 0 ? 1 : pageNumber} // Change the forcePage value
             containerClassName={"pagination"}
             pageLinkClassName={'btn'}
             disabledClassName={"paginationDisabled"}
@@ -72,12 +72,10 @@ const PaginateField = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      justify-content: center;
-      align-items: center;
       border: 1px solid gainsboro;
       cursor: pointer;
     }
-
+    
     .activeBtn {
       background-color: gainsboro;
     }
