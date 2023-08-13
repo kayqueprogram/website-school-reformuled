@@ -13,16 +13,15 @@ type TProps = {
 const CardsGrid = ({ CardComponent, data }: TProps) => {
   const [pageNumber, setPageNumber] = useState(0);
 
-  const cardsPerFirstPage = 3; // Number of cards in the first page
-  const dataPerPage = 10;
+  const dataPerPage = 3; // Show 3 cards per page
   const pageCount = Math.ceil(data.length / dataPerPage);
 
   const changePage = ({ selected }: { selected: number }): void => {
     setPageNumber(selected);
   };
 
-  const startIndex = pageNumber === 0 ? 0 : cardsPerFirstPage + (pageNumber - 1) * dataPerPage;
-  const endIndex = pageNumber === 0 ? cardsPerFirstPage : cardsPerFirstPage + pageNumber * dataPerPage;
+  const startIndex = pageNumber * dataPerPage;
+  const endIndex = startIndex + dataPerPage;
   const dataToRender = data.slice(startIndex, endIndex);
 
   return (
@@ -38,8 +37,8 @@ const CardsGrid = ({ CardComponent, data }: TProps) => {
             previousLabel={<pageIcons.ArrowLeft />}
             nextLabel={<pageIcons.ArrowRight />}
             pageCount={pageCount}
-            onPageChange={changePage} // Corrected onPageChange handler
-            forcePage={pageNumber === 0 ? 1 : pageNumber} // Change the forcePage value
+            onPageChange={changePage}
+            forcePage={pageNumber}
             containerClassName={"pagination"}
             pageLinkClassName={'btn'}
             disabledClassName={"paginationDisabled"}
