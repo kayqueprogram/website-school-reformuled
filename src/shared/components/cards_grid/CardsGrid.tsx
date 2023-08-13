@@ -21,20 +21,17 @@ const CardsGrid = ({ CardComponent, data }: TProps) => {
     setPageNumber(selected);
   };
 
+  const startIndex = pageNumber === 0 ? 0 : cardsPerFirstPage + (pageNumber - 1) * dataPerPage;
+  const endIndex = pageNumber === 0 ? cardsPerFirstPage : cardsPerFirstPage + pageNumber * dataPerPage;
+  const dataToRender = data.slice(startIndex, endIndex);
+
   return (
     <Container>
       <Column>
         <Grid>
-          {data.map((el, index) => {
-            if (pageNumber === 0 && index < cardsPerFirstPage) {
-              return <CardComponent key={el.id} {...el} />;
-            }
-            const dataIndex = index - cardsPerFirstPage + pageNumber * dataPerPage;
-            if (dataIndex >= 0 && dataIndex < dataPerPage) {
-              return <CardComponent key={el.id} {...el} />;
-            }
-            return null;
-          })}
+          {dataToRender.map((el) => (
+            <CardComponent key={el.id} {...el} />
+          ))}
         </Grid>
         <PaginateField>
           <ReactPaginate
