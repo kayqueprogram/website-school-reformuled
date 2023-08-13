@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Grid from '../grid/Grid';
 import ReactPaginate from 'react-paginate';
-import Column from '../column/Column'; // Make sure to import this
+import Column from '../column/Column';
 import pageIcons from 'shared/utils/pageIcons';
-
 
 type TProps = {
   CardComponent: React.FC<any>,
@@ -14,10 +13,9 @@ type TProps = {
 const CardsGrid = ({ CardComponent, data }: TProps) => {
   const [pageNumber, setPageNumber] = useState(0);
 
+  const cardsPerFirstPage = 3; // Number of cards in the first page
   const dataPerPage = 10;
-  const pagesVisited = pageNumber * dataPerPage;
   const pageCount = Math.ceil(data.length / dataPerPage);
-  const dataToRender = data.slice(pagesVisited, pagesVisited + dataPerPage);
 
   const changePage = ({ selected }: { selected: number }): void => {
     setPageNumber(selected);
@@ -27,9 +25,16 @@ const CardsGrid = ({ CardComponent, data }: TProps) => {
     <Container>
       <Column>
         <Grid>
-          {
-            dataToRender.map((el) => <CardComponent key={el.id} {...el} />) // Added key prop
-          }
+          {data.map((el, index) => {
+            if (pageNumber === 0 && index < cardsPerFirstPage) {
+              return <CardComponent key={el.id} {...el} />;
+            }
+            const dataIndex = index - cardsPerFirstPage + pageNumber * dataPerPage;
+            if (dataIndex >= 0 && dataIndex < dataPerPage) {
+              return <CardComponent key={el.id} {...el} />;
+            }
+            return null;
+          })}
         </Grid>
         <PaginateField>
           <ReactPaginate
@@ -79,6 +84,6 @@ const PaginateField = styled.div`
       background-color: gainsboro;
     }
   }
-`;
+};`
 
 export default CardsGrid;
