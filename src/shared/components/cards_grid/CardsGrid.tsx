@@ -38,7 +38,8 @@ const CardsGrid = ({ CardComponent, data }: TProps) => {
             previousLabel={<pageIcons.ArrowLeft />}
             nextLabel={<pageIcons.ArrowRight />}
             pageCount={pageCount}
-            onPageChange={changePage}
+            onPageChange={changePage} // Corrected onPageChange handler
+            forcePage={pageNumber} // Add this line to reflect the current page in ReactPaginate
             containerClassName={"pagination"}
             pageLinkClassName={'btn'}
             disabledClassName={"paginationDisabled"}
