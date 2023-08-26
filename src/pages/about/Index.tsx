@@ -75,14 +75,14 @@ display: block;
           </Column>
 
         )}
-        {videos.map((video) => (
-          <Video key={video.id}>
+        
+          <Video>
             <video controls>
-              <source src={video.src} type="video/mp4" />
+              <source src={about.memorial} type="video/mp4" />
             </video>
-            <Title>{video.title}</Title>
+            <Title>Memorial Bassani</Title>
           </Video>
-        ))}
+        
         <br />
 
       </SectionContainer>
