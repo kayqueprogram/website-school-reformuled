@@ -5,7 +5,7 @@ import Post from 'pages/blog/post/Index';
 import About from 'pages/about/Index';
 import GalleryPage from 'pages/galeria/Index';
 import Gallery from 'pages/galeria/project/Index';
-import BlogPostsPage from 'pages/blog/posts/BlogPostsPage';
+import BlogPostsPage from 'pages/blog/posts/Index';
 
 const routesConfig = [
   {
