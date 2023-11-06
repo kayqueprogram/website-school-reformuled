@@ -10,6 +10,7 @@ import CardsSlide from 'shared/components/cards_slide/CardsSlide';
 import eventsApi from 'services/events';
 import pageTheme from 'shared/styles/pageTheme';
 import Helmet from 'react-helmet'
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -41,7 +42,7 @@ const Index = () => {
           Component={CardsGrid}
           propsForComponent={{CardComponent:BlogCard, }}
         />
-
+        <Link to="/posts"> Ver todos os posts</Link>
       </SectionContainer>
     </div>
   )

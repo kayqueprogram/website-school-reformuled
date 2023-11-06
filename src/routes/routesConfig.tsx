@@ -5,6 +5,7 @@ import Post from 'pages/blog/post/Index';
 import About from 'pages/about/Index';
 import GalleryPage from 'pages/galeria/Index';
 import Gallery from 'pages/galeria/project/Index';
+import BlogPostsPage from 'pages/blog/posts/BlogPostsPage';
 
 const routesConfig = [
   {
@@ -24,6 +25,11 @@ const routesConfig = [
     path:'/blog',
     state:'Blog',
     Component:<PageLayout><Blog/></PageLayout>
+  },
+  {
+    path: '/posts',
+    state: 'Posts',
+    Component:<PageLayout><BlogPostsPage/></PageLayout>
   },
   {
     path:'/blog/:id',
