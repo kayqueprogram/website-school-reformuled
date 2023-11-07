@@ -28,7 +28,6 @@ const routesConfig = [
   },
   {
     path: '/posts',
-    state: 'Posts',
     Component:<PageLayout><BlogPostsPage/></PageLayout>
   },
   {

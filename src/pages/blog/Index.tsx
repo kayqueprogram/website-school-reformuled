@@ -10,6 +10,10 @@ import CardsSlide from 'shared/components/cards_slide/CardsSlide';
 import eventsApi from 'services/events';
 import pageTheme from 'shared/styles/pageTheme';
 import Helmet from 'react-helmet'
+import StylizedLink from 'shared/components/stylized_link/StylizedLink';
+import Span from 'shared/components/span/Span';
+import Row from 'shared/components/row/Row';
+import pageIcons from "shared/utils/pageIcons";
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -42,7 +46,14 @@ const Index = () => {
           Component={CardsGrid}
           propsForComponent={{CardComponent:BlogCard, }}
         />
-        <Link to="/posts"> Ver todos os posts</Link>
+        <StylizedLink to={`${'/posts'}`}>
+            <Span fontSize="2rem" fontWeight='bold' color={pageTheme.colors.details.secondary.dark}>
+              <Row alignItems="center">
+                 <span>Todos os posts</span>
+                 <pageIcons.ArrowRight/>
+              </Row>
+            </Span>
+          </StylizedLink>
       </SectionContainer>
     </div>
   )
