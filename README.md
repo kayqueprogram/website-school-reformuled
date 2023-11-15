@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+<h1 align="center"> Website da Escola Estadual Omar Donato Bassani </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+Este é uma versão final do website desenvolvido para minha escola. Possui 4 páginas principais: Home, Blog, Galeria e Sobre.
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-dowload">Créditos</a>
+</p>
 
-In the project directory, you can run:
+<br/>
+<br/>
 
-### `npm start`
+<p align="center">
+  <img alt="Visualização do site" src="https://cdn.discordapp.com/attachments/995485098336067675/1127685972230934528/Bqn4kSE.png" width="100%">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm test`
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Styled-components](https://styled-components.com/)
+- [Firebase](https://firebase.google.com/?hl=pt)
+ 
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Projeto
 
-### `npm run build`
+Este é um Site desenvolvido para minha escola.  ideia inicial era montar um painel digital para o [Projeto dia D](https://omardonatobassani.vercel.app/galeria/projetodiad)(Um projeto de conscientização sobre a adoção e abandono de animais).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Essa ideia evoluiu e partiu para um site, um site onde todos podem ver informações da escola, podem ver um pouco sobre sua história e um pouco de cada projeto, evento ou apresentação marcante feita na escola.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Chegamos ao ponto de pensar em anexar um blog ao site, para informar os alunos e promover as ações realizadas.
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Mobile
+<p align="center">
+  <img alt="Visualização Mobile" src="https://cdn.discordapp.com/attachments/995485098336067675/1174142256106721301/omardonatobassani.vercel.app_mobile.png?ex=65668430&is=65540f30&hm=1224c91513b25eacdae906c3f224a4a31ecc6f0f1ef2822133206a1877c19d59&" width="50%"/>
+</p>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Desktop
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="center">
+  <img alt="Visualização Desktop" src="https://cdn.discordapp.com/attachments/995485098336067675/1174142255632756736/omardonatobassani.vercel.app_blog.png?ex=65668430&is=65540f30&hm=c4fb144b3169e35771d19a575e8ab00788447c35e2027bfea17c260a661bf9ce&" />
+</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br/><br/>
 
-## Learn More
+## 🔖 Créditos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p>Envolvidos no projeto:</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ - [Kayque](https://siriusdevsh.vercel.app/)
+ - [Homo)](https://github.com/LaraGb)
+
+
+---
+
+[Participe da minha comunidade!](https://discord.com/invite/eAa8NQDa?utm_source=Discord%20Widget&utm_medium=Connect)
