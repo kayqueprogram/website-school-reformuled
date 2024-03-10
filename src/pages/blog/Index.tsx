@@ -24,7 +24,7 @@ const Index = () => {
         <meta name="description" content="Confira os posts e eventos de nossa escola!"/>.
       </Helmet>
       <Banner
-        image='https://cdn.discordapp.com/attachments/1098057370728403115/1108939866957434890/patio.webp'
+        image='https://firebasestorage.googleapis.com/v0/b/images-6adbb.appspot.com/o/bassani%2Fpatio.webp?alt=media&token=9c124e5d-6f49-42da-9008-09a00fa7a0ec'
         title='Confira o nosso blog!'
       />
       <SectionContainer
