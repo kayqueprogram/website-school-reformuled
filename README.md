@@ -7,14 +7,14 @@ Este é uma versão final do website desenvolvido para minha escola. Possui 4 p�
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-dowload">Créditos</a>
+  <a href="#-creditos">Créditos</a>
 </p>
 
 <br/>
 <br/>
 
 <p align="center">
-  <img alt="Visualização do site" src="https://cdn.discordapp.com/attachments/995485098336067675/1127685972230934528/Bqn4kSE.png" width="100%">
+  <img alt="Visualização do site" src="https://firebasestorage.googleapis.com/v0/b/portfolio-9105a.appspot.com/o/Bqn4kSE.png?alt=media&token=ddddb430-00cb-42e9-a48b-9c14f2c41d96" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -39,7 +39,7 @@ Chegamos ao ponto de pensar em anexar um blog ao site, para informar os alunos e
 
 ## Mobile
 <p align="center">
-  <img alt="Visualização Mobile" src="https://cdn.discordapp.com/attachments/995485098336067675/1174142256106721301/omardonatobassani.vercel.app_mobile.png?ex=65668430&is=65540f30&hm=1224c91513b25eacdae906c3f224a4a31ecc6f0f1ef2822133206a1877c19d59&" width="50%"/>
+  <img alt="Visualização Mobile" src="https://firebasestorage.googleapis.com/v0/b/portfolio-9105a.appspot.com/o/imagemobile.png?alt=media&token=07ed827b-fbc0-4074-875d-c1fb876ba097" width="50%"/>
 </p>
 
 
@@ -47,7 +47,7 @@ Chegamos ao ponto de pensar em anexar um blog ao site, para informar os alunos e
 
 
 <p align="center">
-  <img alt="Visualização Desktop" src="https://cdn.discordapp.com/attachments/995485098336067675/1174142255632756736/omardonatobassani.vercel.app_blog.png?ex=65668430&is=65540f30&hm=c4fb144b3169e35771d19a575e8ab00788447c35e2027bfea17c260a661bf9ce&" />
+  <img alt="Visualização Desktop" src="https://firebasestorage.googleapis.com/v0/b/portfolio-9105a.appspot.com/o/imagedesk.png?alt=media&token=cfea3c81-9a50-4b15-b379-501cf59e78ec" />
 </p>
 
 <br/><br/>
@@ -56,8 +56,8 @@ Chegamos ao ponto de pensar em anexar um blog ao site, para informar os alunos e
 
 <p>Envolvidos no projeto:</p>
 
- - [Kayque](https://siriusdevsh.vercel.app/)
- - [Homo)](https://github.com/LaraGb)
+ - [Kayque de Jesus](https://siriusdevsh.vercel.app/)
+ - [Lara Gabriele](https://github.com/LaraGb)
 
 
 ---
