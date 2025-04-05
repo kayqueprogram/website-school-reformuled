@@ -56,7 +56,7 @@ Chegamos ao ponto de pensar em anexar um blog ao site, para informar os alunos e
 
 <p>Envolvidos no projeto:</p>
 
- - [Kayque de Jesus](https://siriusdevsh.vercel.app/)
+ - [Kayque de Jesus](https://kayqueportfolio.vercel.app/)
  - [Lara Gabriele](https://github.com/LaraGb)
 
 
